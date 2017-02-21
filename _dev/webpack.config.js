@@ -33,9 +33,6 @@ module.exports = [{
 }, {
   // CSS
   entry: [
-    './css/normalize.css',
-    './css/example.less',
-    './css/st/dev.styl',
     './css/theme.scss'
   ],
   output: {

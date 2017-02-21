@@ -1,18 +1,19 @@
 <!doctype html>
 <html lang="{$language.locale}">
+<head>
+  {block name='head'}
+    {include file='_partials/head.tpl'}
+  {/block}
+</head>
 
-  <head>
-    {block name='head'}
-      {include file='_partials/head.tpl'}
-    {/block}
-  </head>
+<body id="{$page.page_name}" class="{$page.body_classes|classnames}">
+  
+  {block name='hook_after_body_opening_tag'}
+    {hook h='displayAfterBodyOpeningTag'}
+  {/block}
 
-  <body id="{$page.page_name}" class="{$page.body_classes|classnames}">
-
-    {block name='hook_after_body_opening_tag'}
-      {hook h='displayAfterBodyOpeningTag'}
-    {/block}
-
+  <!-- Start page content-->
+  <div>
     <header id="header">
       {block name='header'}
         {include file='_partials/header.tpl'}
@@ -69,10 +70,14 @@
       {include file="_partials/javascript.tpl" javascript=$javascript.bottom}
     {/block}
 
-    {block name='hook_before_body_closing_tag'}
-      {hook h='displayBeforeBodyClosingTag'}
-    {/block}
+    
 
-  </body>
+  </div>
+  <!-- End page content -->
+
+  {block name='hook_before_body_closing_tag'}
+    {hook h='displayBeforeBodyClosingTag'}
+  {/block}
+</body>
 
 </html>

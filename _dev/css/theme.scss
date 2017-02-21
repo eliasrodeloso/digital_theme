@@ -1,5 +1,9 @@
-$body-background-color: #fefefe;
+@import '~bootstrap/scss/bootstrap';
 
-body {
-  background: $body-background-color;
+.header-nav{
+  background-color: $black;
+} 
+
+.a-bgdark{
+  color: $gray-lightest
 }
