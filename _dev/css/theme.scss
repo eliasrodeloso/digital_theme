@@ -1,9 +1,45 @@
 @import '~bootstrap/scss/bootstrap';
 
-.header-nav{
+.dt-pre-header{
   background-color: $black;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 0 1rem;
+
+  ul{
+    display: inline-block;
+    margin: 0.5rem 0 0.5rem 0;
+    
+    li{
+      display: inline-block;
+    }
+   
+  }
+
+  *{
+    padding: 0;
+    
+    ::before{
+      padding: 0;
+    }
+
+    ::after{
+      padding: 0;
+    }
+  }
+  
 } 
 
-.a-bgdark{
-  color: $gray-lightest
+#dt-last-one{
+  border-left: 1px solid $gray-lightest;
+}
+
+.dt-nav-link{
+  color: $gray-lightest;
+  padding: 0 1rem 0 1rem;
+}
+
+.dt-nav-link:hover{
+  color: $gray-light;
 }

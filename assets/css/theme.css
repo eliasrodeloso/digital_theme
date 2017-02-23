@@ -5987,8 +5987,30 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
-.header-nav {
-  background-color: #000; }
+.dt-pre-header {
+  background-color: #000;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 0 1rem; }
+  .dt-pre-header ul {
+    display: inline-block;
+    margin: 0.5rem 0 0.5rem 0; }
+    .dt-pre-header ul li {
+      display: inline-block; }
+  .dt-pre-header * {
+    padding: 0; }
+    .dt-pre-header * ::before {
+      padding: 0; }
+    .dt-pre-header * ::after {
+      padding: 0; }
 
-.a-bgdark {
-  color: #f7f7f9; }
+#dt-last-one {
+  border-left: 1px solid #fefefe; }
+
+.dt-nav-link {
+  color: #fefefe;
+  padding: 0 1rem 0 1rem; }
+
+.dt-nav-link:hover {
+  color: #636c72; }
