@@ -20,7 +20,10 @@ module.exports = [{
     loaders: [{
       test: /\.js$/,
       exclude: /node_modules/,
-      loaders: ['babel-loader']
+      loader: ['babel-loader'],
+      query: {
+        presets: ['es2015']
+      }
     }]
   },
   externals: {
@@ -36,8 +39,8 @@ module.exports = [{
     './css/theme.scss'
   ],
   output: {
-    path: '../assets/js',
-    filename: 'theme.js'
+    path: '../assets/css',
+    filename: 'theme.css'
   },
   module: {
     loaders: [{
@@ -45,24 +48,6 @@ module.exports = [{
       loader: ExtractTextPlugin.extract(
         "style",
         "css-loader?sourceMap!postcss!sass-loader?sourceMap"
-      )
-    }, {
-      test: /\.styl$/,
-      loader: ExtractTextPlugin.extract(
-        "style",
-        "css-loader?sourceMap!postcss!stylus-loader?sourceMap"
-      )
-    }, {
-      test: /\.less$/,
-      loader: ExtractTextPlugin.extract(
-        "style",
-        "css-loader?sourceMap!postcss!less-loader?sourceMap"
-      )
-    }, {
-      test: /\.css$/,
-      loader: ExtractTextPlugin.extract(
-        'style',
-        'css-loader?sourceMap!postcss-loader'
       )
     }, {
       test: /.(png|woff(2)?|eot|ttf|svg)(\?[a-z0-9=\.]+)?$/,
