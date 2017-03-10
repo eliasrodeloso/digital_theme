@@ -31,16 +31,9 @@
     </div>
   </div>
 </div>
-<div class="navbar navbar-toggleable-md">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
-  </button>
- 
-  {block name="dt-main-menu"}
-    <div id="dt-main-menu">
-      {hook h='displayMenu'}
-    </div>
-  {/block}
 
-</div>
+{block name="dt-main-menu"}
+  {hook h='displayMenu'}
+{/block}
+
 

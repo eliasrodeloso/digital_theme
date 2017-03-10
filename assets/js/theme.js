@@ -53,6 +53,12 @@
 
 	'use strict';
 
+	var _popover = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"components/popover\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+	var _popover2 = _interopRequireDefault(_popover);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 	/**
 	 * This is the entry point for specific javascript of theme
 	 */
@@ -60,6 +66,12 @@
 	__webpack_require__(2);
 	__webpack_require__(3);
 	__webpack_require__(4);
+
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip();
+
+	  $('[data-toggle="popover"]').popover();
+	});
 
 /***/ },
 /* 2 */

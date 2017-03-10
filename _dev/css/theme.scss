@@ -119,6 +119,25 @@
   text-transform: uppercase;
 }
 
+#dt-main-menu{
+  background-color: $brand-primary;
+  color: $gray-lightest;
+
+  .dt-top-menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .dt-root-category{
+    display: list-item;
+  }
+  
+  ul li a{
+    color: $gray-lightest;
+  }
+}
+
 // HTML Components
 
 

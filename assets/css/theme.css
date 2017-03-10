@@ -6073,3 +6073,15 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 .dt-upper {
   text-transform: uppercase; }
+
+#dt-main-menu {
+  background-color: #000066;
+  color: #fefefe; }
+  #dt-main-menu .dt-top-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  #dt-main-menu .dt-root-category {
+    display: list-item; }
+  #dt-main-menu ul li a {
+    color: #fefefe; }
