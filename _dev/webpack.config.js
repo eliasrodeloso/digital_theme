@@ -1,30 +1,14 @@
 var webpack = require('webpack');
-var path = require('path');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 var plugins = [];
 
-var production = false;
-
-if (production) {
-  plugins.push(
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      }
-    })
-  );
-}
-
 plugins.push(
-  new ExtractTextPlugin(
-    path.join(
-      '..', 'css', 'theme.css'
-    )
-  )
+  new ExtractTextPlugin('../css/theme.css')
 );
 
-module.exports = {
+module.exports = [{
+  // JavaScript
   entry: [
     './js/theme.js'
   ],
@@ -36,30 +20,42 @@ module.exports = {
     loaders: [{
       test: /\.js$/,
       exclude: /node_modules/,
-      loaders: ['babel-loader']
-    }, {
-      test: /\.scss$/,
-      loader: ExtractTextPlugin.extract(
-        "style",
-        "css?sourceMap!postcss!sass?sourceMap"
-      )
-    }, {
-      test: /.(png|woff(2)?|eot|ttf|svg)(\?[a-z0-9=\.]+)?$/,
-      loader: 'file-loader?name=../css/[hash].[ext]'
-    }, {
-      test: /\.css$/,
-      loader: "style-loader!css-loader!postcss-loader"
+      loader: "babel-loader",
+      query: {
+        presets: ['es2015']
+      }
     }]
-  },
-  postcss: function() {
-    return [require('postcss-flexibility')];
   },
   externals: {
     prestashop: 'prestashop'
   },
-  devtool: 'source-map',
   plugins: plugins,
   resolve: {
-    extensions: ['', '.js', '.scss']
+    extensions: ['', '.js']
   }
-};
+}, {
+  // CSS
+  entry: [
+    './css/theme.scss'
+  ],
+  output: {
+    path: '../assets/css',
+    filename: 'theme.css'
+  },
+  module: {
+    loaders: [{
+      test: /\.scss$/,
+      loader: ExtractTextPlugin.extract(
+        "style",
+        "css-loader?sourceMap!postcss!sass-loader?sourceMap"
+      )
+    }, {
+      test: /.(png|woff(2)?|eot|ttf|svg)(\?[a-z0-9=\.]+)?$/,
+      loader: 'file-loader?name=../css/[hash].[ext]'
+    }]
+  },
+  plugins: plugins,
+  resolve: {
+    extensions: ['', '.scss', '.styl', '.less', '.css']
+  }
+}];

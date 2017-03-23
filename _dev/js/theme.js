@@ -2,9 +2,9 @@
  * This is the entry point for specific javascript of theme
  */
 
-require('jquery/dist/jquery');
-require('tether');
-require('bootstrap/dist/js/bootstrap.min');
+import $ from 'jquery';
+import tether from 'expose?Tether!tether';
+import 'bootstrap';
 
 //import './components/popover';
 

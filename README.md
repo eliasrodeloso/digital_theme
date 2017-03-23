@@ -1,16 +1,6 @@
-# PrestaShop Starter Theme
-
-[![Build Status](https://travis-ci.org/PrestaShop/StarterTheme.svg?branch=master)](https://travis-ci.org/PrestaShop/StarterTheme)
-
-[Starter Theme](http://build.prestashop.com/news/starter-theme-kickoff/) is a tool for designer to work efficiently,
-it includes only what is mandatory:
-* a list of templates
-* a configuration file
-* the development assets with minimal javascripts and stylesheets
+# Digital Center's theme for Prestashop 1.7
 
 ## Installation
-
-Note the Starter Theme is only available for PrestaShop 1.7+.
 
 Clone this repository and move the `StarterTheme` into `themes` folder.
 
