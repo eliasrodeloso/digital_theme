@@ -15,5 +15,3 @@
     {/foreach}
   </script>
 {/if}
-
-<script src="https://use.fontawesome.com/3a6d325a91.js"></script>

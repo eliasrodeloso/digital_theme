@@ -2,14 +2,14 @@
  * This is the entry point for specific javascript of theme
  */
 
+require('jquery/dist/jquery');
 require('tether');
-require('bootstrap');
-require('bootstrap-touchspin')
+require('bootstrap/dist/js/bootstrap.min');
 
-import PopOver from 'components/popover'
+//import './components/popover';
 
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-  
-  $('[data-toggle="popover"]').popover()
+$().ready(function () {
+
+  alert('Todo ok;');
+
 })

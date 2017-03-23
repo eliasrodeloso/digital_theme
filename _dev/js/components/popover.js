@@ -7,8 +7,8 @@ export default class PopOver{
 	}
 	
 	init(){
-		this.po.alert(){
+		this.po.alert(function(){
 			alert("It is workiing!")
-		};
+		});
 	}
 }

@@ -1,0 +1,54 @@
+
+/**
+
+	Estilos para el modulo ps_searchbar
+
+*/
+
+#dt-search-bar{
+  
+  .dt-input-group{
+    display: flex;
+    flex: 1 1 100%;
+  }
+
+  .dt-form-control{
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: $gray-dark;
+    background-color: $white;
+    background-image: none;
+    background-clip: padding-box;
+    border-top: 1px solid rgba($gray, 1);
+    border-left: 1px solid rgba($gray, 1);
+    border-bottom: 1px solid rgba($gray, 1);
+    border-right: 0;
+    border-radius: 3px 0 0 3px;
+    transition: border-color $transition-fade, box-shadow $transition-fade;
+    width: 90%;
+  }
+
+  .dt-form-control:focus{
+    border-color: rgba($brand-primary, 1);
+    background-color: $white;
+    color: $gray-dark;
+  }
+
+  .dt-form-control::placeholder{
+    color: rgba($gray, 0.75);
+    opacity: 0.75;
+  }
+
+  #dt-search-button{
+    width: 10%;
+    background-color: $brand-primary;
+    color: $gray-lightest;
+    border: 1px solid rgba($brand-secondary, 1);
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    display: flex;
+    @include hover-color;
+  }
+
+}

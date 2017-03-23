@@ -1,141 +1,49 @@
 @import '~bootstrap/scss/bootstrap';
+@import '_mixins';
+@import '_fonts';
+@import '_utilities';
+@import 'components/searchbar';
+@import 'components/shoppingcart';
+@import 'components/customeraccount';
 
-.dt-pre-header{
-  background-color: $black;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  padding: 0 1rem;
+.dt-btn-dropdown-header{
 
-  ul{
-    display: inline-block;
-    margin: 0.5rem 0 0.5rem 0;
+	&::after{
+		display: none;
+		content: "";
+	}
+
+	color: $gray-dark;
+  border-radius: 0;
+  background-color: transparent;
+
+	&:hover{
+		color: $brand-primary;
+		background-color: $gray-lightest;
     
-    li{
-      display: inline-block;
-    }
-   
-  }
-
-  *{
-    padding: 0;
-    
-    ::before{
-      padding: 0;
-    }
-
-    ::after{
-      padding: 0;
-    }
-  }
-  
-} 
-
-#dt-last-one{
-  border-left: 1px solid $gray-lightest;
+	}
 }
 
-.dt-nav-link{
+.dt-navbar{
+	background-color: $gray-lightest;
+	box-shadow: 0px 1px 2px 0px rgba(0,0,0, 0.25);
+}
+
+.dt-toggler-menu{
   color: $gray-lightest;
-  padding: 0 1rem 0 1rem;
-}
-
-.dt-nav-link:hover{
-  color: $gray-light;
-}
-
-#dt-search-bar{
-  
-  .dt-input-group{
-    display: flex;
-    flex: 1 1 100%;
-  }
-
-  .dt-form-control{
-    padding: 0.5rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.25;
-    color: $gray-dark;
-    background-color: $white;
-    background-image: none;
-    background-clip: padding-box;
-    border-top: 1px solid rgba($gray, 1);
-    border-left: 1px solid rgba($gray, 1);
-    border-bottom: 1px solid rgba($gray, 1);
-    border-right: 0;
-    border-radius: 3px 0 0 3px;
-    transition: border-color $transition-fade, box-shadow $transition-fade;
-    width: 90%;
-  }
-
-  .dt-form-control:focus{
-    border-color: rgba($brand-primary, 1);
-    background-color: $white;
-    color: $gray-dark;
-  }
-
-  .dt-form-control::placeholder{
-    color: rgba($gray, 0.75);
-    opacity: 0.75;
-  }
-
-  #dt-search-button{
-    width: 10%;
-    background-color: $brand-primary;
-    color: $gray-lightest;
-    border: 1px solid rgba($brand-secondary, 1);
-    border-radius: 0 3px 3px 0;
-    cursor: pointer;
-  }
-  
-  #dt-search-button:hover{
-    background-color: rgba($brand-secondary, 1);
-  }
-}
-
-.dt-cart-img{
-  width: 75px;
-  height: 75px;
-}
-
-.dt-blue-text{
-  color: $brand-primary;
-}
-
-.dt-price-mini{
-  font-size: 0.8rem;
-}
-
-.dt-label{
-  @extend .dt-blue-text;
-  font-weight: $font-weight-bold;
-}
-
-.dt-no-wrap{
-  white-space: nowrap;
-}
-
-.dt-upper{
-  text-transform: uppercase;
-}
-
-#dt-main-menu{
   background-color: $brand-primary;
-  color: $gray-lightest;
+  border: 0;
+	cursor: pointer;
+	@include hover-color;
+}
 
-  .dt-top-menu{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+.dt-show{
+	display: block !important;
+}
 
-  .dt-root-category{
-    display: list-item;
-  }
-  
-  ul li a{
-    color: $gray-lightest;
-  }
+.page-wrapper{
+	margin-top: 56px;
+	padding-top: 0.1rem;
 }
 
 // HTML Components
