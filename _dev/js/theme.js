@@ -6,10 +6,11 @@ import $ from 'jquery';
 import tether from 'expose?Tether!tether';
 import 'bootstrap';
 
-//import './components/popover';
+import './components/dropdowns';
 
-$().ready(function () {
+import prestashop from 'prestashop';
+import EventEmitter from 'events';
 
-  alert('Todo ok;');
-
-})
+for (var i in EventEmitter.prototype) {
+  prestashop[i] = EventEmitter.prototype[i];
+}

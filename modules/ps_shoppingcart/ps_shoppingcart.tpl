@@ -1,9 +1,17 @@
 <div class="blockcart cart-preview " data-refresh-url="{$refresh_url}">
-  <div class="dropdown">
-    <button type="button" class="btn dt-btn-dropdown-header dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownCart">
+  <div class="dropdown" id="dropdownShopping">
+    <button type="button" class="hidden-sm-down btn dt-btn-dropdown-header dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownCart">
       <i class="material-icons md-36 hidden-sm-down" aria-hidden="true">&#xE8CC;</i>
+      {if $cart.products}
+        <span class="dt-quantity-badge hidden-sm-down">{$cart.products_count}</span>
+      {/if}
+    </button>
+    <button type="button" class="hidden-md-up btn btn-sm dt-btn-dropdown-header dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownCart">
       <i class="material-icons md-24 hidden-md-up" aria-hidden="true">&#xE8CC;</i>
-    </button>  
+      {if $cart.products}
+        <span class="dt-quantity-badge dt-sm">{$cart.products_count}</span>
+      {/if}
+    </button>
     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownCart">
       
       {if $cart.products}

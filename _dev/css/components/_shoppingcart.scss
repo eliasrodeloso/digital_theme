@@ -18,3 +18,16 @@
   @extend .dt-blue-text;
   font-weight: $font-weight-bold;
 }
+
+.dt-quantity-badge{
+  background-color: $brand-primary;
+  color: $gray-lightest;
+  min-width: 18px;
+  padding: 0.3rem;
+  position: absolute;
+  top: 0.2rem;
+  right: 0.3rem;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: bold;
+}

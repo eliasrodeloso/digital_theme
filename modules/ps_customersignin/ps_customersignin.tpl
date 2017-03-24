@@ -1,10 +1,12 @@
-<div class="user-info ml-auto">
-  <div class="dropdown">
-    <a href="#" class="btn dropdown-toggle dt-btn-dropdown-header" id="dropdownCustomer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <i class="material-icons md-36 hidden-sm-down" aria-hidden="true">&#xE853;</i>
-      <i class="material-icons md-24 hidden-md-up" aria-hidden="true">&#xE853;</i>
+<div class="user-info ml-auto" >
+  <div class="dropdown " id="dropdownCustomer">
+    <a href="#" id="dropdownForCustomer" class="hidden-sm-down btn dropdown-toggle dt-btn-dropdown-header" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="material-icons md-36 " aria-hidden="true">&#xE853;</i>
     </a>
-    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownCustomer">
+    <a href="#" id="dropdownForCustomer" class="hidden-md-up btn btn-sm dropdown-toggle dt-btn-dropdown-header" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="material-icons md-24 " aria-hidden="true">&#xE853;</i>
+    </a>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownForCustomer">
       {if $logged}
         <h6 class="dropdown-header">{$customerName}</h6>
         <div class="dropdown-divider"></div>

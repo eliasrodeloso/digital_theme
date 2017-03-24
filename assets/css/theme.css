@@ -6057,6 +6057,10 @@ Utilidades varias
   width: 100%;
   max-width: 100%; }
 
+.dt-sm {
+  font-size: 0.5rem !important;
+  font-weight: 400 !important; }
+
 /**
 
 	Estilos para el modulo ps_searchbar
@@ -6117,6 +6121,18 @@ Utilidades varias
 .dt-label {
   font-weight: bold; }
 
+.dt-quantity-badge {
+  background-color: #000066;
+  color: #fefefe;
+  min-width: 18px;
+  padding: 0.3rem;
+  position: absolute;
+  top: 0.2rem;
+  right: 0.3rem;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: bold; }
+
 /**
 	Estilos para el modulo ps_customeraccountlinks
 */
@@ -6139,7 +6155,8 @@ Utilidades varias
   color: #fefefe;
   background-color: #000066;
   border: 0;
-  cursor: pointer; }
+  cursor: pointer;
+  height: 100%; }
   .dt-toggler-menu:hover {
     background-color: navy; }
 
