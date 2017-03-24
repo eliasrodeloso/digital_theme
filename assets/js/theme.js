@@ -63,13 +63,13 @@
 
 	__webpack_require__(5);
 
-	__webpack_require__(7);
+	__webpack_require__(6);
 
-	var _prestashop = __webpack_require__(8);
+	var _prestashop = __webpack_require__(7);
 
 	var _prestashop2 = _interopRequireDefault(_prestashop);
 
-	var _events = __webpack_require__(9);
+	var _events = __webpack_require__(8);
 
 	var _events2 = _interopRequireDefault(_events);
 
@@ -15675,8 +15675,7 @@
 
 
 /***/ },
-/* 6 */,
-/* 7 */
+/* 6 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -15707,13 +15706,13 @@
 	});
 
 /***/ },
-/* 8 */
+/* 7 */
 /***/ function(module, exports) {
 
 	module.exports = prestashop;
 
 /***/ },
-/* 9 */
+/* 8 */
 /***/ function(module, exports) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
