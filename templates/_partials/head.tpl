@@ -39,5 +39,5 @@
 {/block}
 
 {block name='hook_extra'}
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"   rel="stylesheet">
+  
 {/block}

@@ -3,7 +3,7 @@
  */
 
 import $ from 'jquery';
-import tether from 'expose?Tether!tether';
+import tether from 'expose-loader?Tether!tether';
 import 'bootstrap';
 
 import './components/dropdowns';

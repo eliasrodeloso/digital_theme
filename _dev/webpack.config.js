@@ -1,61 +1,71 @@
-var webpack = require('webpack');
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
-
-var plugins = [];
-
-plugins.push(
-  new ExtractTextPlugin('../css/theme.css')
-);
+var path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = [{
-  // JavaScript
-  entry: [
-    './js/theme.js'
-  ],
+  // Bundle for JS
+  entry: './js/theme.js',
   output: {
-    path: '../assets/js',
-    filename: 'theme.js'
+    filename: 'theme.js',
+    path: '../assets/js'
   },
   module: {
-    loaders: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loader: "babel-loader",
-      query: {
-        presets: ['es2015']
-      }
+    rules: [{
+      test: '/\.js$/',
+      exclude: '/node-modules/',
+      loader: 'babel-loader'
     }]
   },
   externals: {
     prestashop: 'prestashop'
   },
-  plugins: plugins,
-  resolve: {
-    extensions: ['', '.js']
-  }
+  plugins: [
+    new UglifyJsPlugin()
+  ]
+
 }, {
-  // CSS
-  entry: [
-    './css/theme.scss'
-  ],
+  //Bundle for SCSS
+  entry: './scss/theme.scss',
   output: {
-    path: '../assets/css',
-    filename: 'theme.css'
+    filename: 'theme.css',
+    path: '../assets/css'
   },
+  devtool: 'source-map',
   module: {
-    loaders: [{
-      test: /\.scss$/,
-      loader: ExtractTextPlugin.extract(
-        "style",
-        "css-loader?sourceMap!postcss!sass-loader?sourceMap"
-      )
-    }, {
-      test: /.(png|woff(2)?|eot|ttf|svg)(\?[a-z0-9=\.]+)?$/,
-      loader: 'file-loader?name=../css/[hash].[ext]'
-    }]
+    rules: [
+      {
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+          use: [{
+              loader: 'css-loader', options: {
+                sourceMap: true,
+                importLoaders: 1
+              }
+            }, {
+              loader: 'postcss-loader', options: {
+                plugins: function (){
+                  return [
+                    require('autoprefixer')
+                  ]
+                }
+              }
+            }, {
+              loader: 'sass-loader', options: {
+                sourceMap: true
+              }
+            }
+            ],
+            fallback: 'style-loader',
+        })
+      }, {
+        test: /.(png|woff(2)?|eot|ttf|svg)(\?[a-z0-9=\.]+)?$/,
+        use: 'file-loader?name=../css/fonts/[hash].[ext]'
+      }
+    ]
   },
-  plugins: plugins,
-  resolve: {
-    extensions: ['', '.scss', '.styl', '.less', '.css']
-  }
-}];
+  plugins: [
+    new ExtractTextPlugin('theme.css'),
+    new UglifyJsPlugin()
+  ]
+  
+}]
