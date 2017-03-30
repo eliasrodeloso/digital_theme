@@ -28,9 +28,9 @@
       <div class="container">
         <div class="row no-gutters">
           <div class="col-md-1 col-lg-1">
-            <button class="dt-toggler-menu d-flex flex-column" type="button" data-toggle="collapse" data-target="#dtMenu" aria-controls="dtMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="dt-toggler-menu d-flex align-items-center flex-column" type="button" data-toggle="collapse" data-target="#dtMenu" aria-controls="dtMenu" aria-expanded="false" aria-label="Toggle navigation">
               <i class="material-icons md-36">&#xE5D2;</i>
-              <span class="dt-navtitle">Categorías</span>
+              <span class="dt-navtitle">{l s='Categorías' d='Shop.Theme.Actions'}</span>
             </button>
           </div>
           

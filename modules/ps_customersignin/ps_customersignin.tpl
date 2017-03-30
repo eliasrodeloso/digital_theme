@@ -6,7 +6,7 @@
     <a href="#" id="dropdownForCustomer" class="hidden-md-up btn btn-sm dropdown-toggle dt-btn-dropdown-header" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <i class="material-icons md-24 " aria-hidden="true">&#xE853;</i>
     </a>
-    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownForCustomer">
+    <div class="dropdown-menu dropdown-menu-right animated slideInUp" aria-labelledby="dropdownForCustomer">
       {if $logged}
         <h6 class="dropdown-header">{$customerName}</h6>
         <div class="dropdown-divider"></div>

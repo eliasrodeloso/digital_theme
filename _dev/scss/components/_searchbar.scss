@@ -27,17 +27,17 @@
     border-radius: 3px 0 0 3px;
     transition: border-color $transition-fade, box-shadow $transition-fade;
     width: 90%;
-  }
 
-  .dt-form-control:focus{
-    border-color: rgba($brand-primary, 1);
-    background-color: $white;
-    color: $gray-dark;
-  }
+    &:focus{
+      border-color: rgba($brand-primary, 1);
+      background-color: $white;
+      color: $gray-dark;
+    }
 
-  .dt-form-control::placeholder{
-    color: rgba($gray, 0.75);
-    opacity: 0.75;
+    &::placeholder{
+      color: rgba($gray, 0.75);
+      opacity: 0.75;
+    }
   }
 
   #dt-search-button{

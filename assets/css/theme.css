@@ -9188,7 +9188,9 @@ Utilidades varias
   height: 100%;
   bottom: 0;
   position: fixed;
-  display: none; }
+  display: none;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s; }
 
 .dt-navtitle {
   font-size: 1rem; }
@@ -9234,23 +9236,19 @@ Utilidades varias
   -webkit-transition: border-color opacity 0.15s linear, box-shadow opacity 0.15s linear;
   transition: border-color opacity 0.15s linear, box-shadow opacity 0.15s linear;
   width: 90%; }
-
-#dt-search-bar .dt-form-control:focus {
-  border-color: #000066;
-  background-color: #fff;
-  color: #292b2c; }
-
-#dt-search-bar .dt-form-control::-webkit-input-placeholder {
-  color: rgba(70, 74, 76, 0.75);
-  opacity: 0.75; }
-
-#dt-search-bar .dt-form-control:-ms-input-placeholder {
-  color: rgba(70, 74, 76, 0.75);
-  opacity: 0.75; }
-
-#dt-search-bar .dt-form-control::placeholder {
-  color: rgba(70, 74, 76, 0.75);
-  opacity: 0.75; }
+  #dt-search-bar .dt-form-control:focus {
+    border-color: #000066;
+    background-color: #fff;
+    color: #292b2c; }
+  #dt-search-bar .dt-form-control::-webkit-input-placeholder {
+    color: rgba(70, 74, 76, 0.75);
+    opacity: 0.75; }
+  #dt-search-bar .dt-form-control:-ms-input-placeholder {
+    color: rgba(70, 74, 76, 0.75);
+    opacity: 0.75; }
+  #dt-search-bar .dt-form-control::placeholder {
+    color: rgba(70, 74, 76, 0.75);
+    opacity: 0.75; }
 
 #dt-search-bar #dt-search-button {
   width: 10%;
@@ -9303,6 +9301,35 @@ Utilidades varias
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s; }
 
+#carouselHome {
+  width: 100%;
+  margin-top: 1rem;
+  box-shadow: 0 0 1em rgba(41, 43, 44, 0.8); }
+  #carouselHome figure {
+    margin: 0; }
+  #carouselHome .carousel-caption {
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 1rem 4rem 2rem 4rem;
+    width: 100%;
+    background-image: -webkit-linear-gradient(bottom, rgba(41, 43, 44, 0.6), rgba(70, 74, 76, 0));
+    background-image: linear-gradient(to top, rgba(41, 43, 44, 0.6), rgba(70, 74, 76, 0)); }
+  #carouselHome .carousel-indicators {
+    bottom: 0; }
+
+.dt-delay-1 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s; }
+
+.dt-delay-2 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s; }
+
+.dt-delay-3 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s; }
+
 .dt-btn-dropdown-header {
   color: #292b2c;
   border-radius: 0;
@@ -9333,5 +9360,3 @@ Utilidades varias
 .page-wrapper {
   margin-top: 56px;
   padding-top: 0.1rem; }
-
-/*# sourceMappingURL=theme.css.map*/

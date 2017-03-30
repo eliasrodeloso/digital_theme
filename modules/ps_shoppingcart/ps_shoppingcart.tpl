@@ -12,7 +12,7 @@
         <span class="dt-quantity-badge dt-sm">{$cart.products_count}</span>
       {/if}
     </button>
-    <div class="dropdown-menu dropdown-menu-right animated bounceInUp" aria-labelledby="dropdownCart">
+    <div class="dropdown-menu dropdown-menu-right animated slideInUp" aria-labelledby="dropdownCart">
       
       {if $cart.products}
         {foreach from=$cart.products item=product}

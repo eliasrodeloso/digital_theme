@@ -9,6 +9,7 @@ module.exports = [{
     filename: 'theme.js',
     path: '../assets/js'
   },
+  devtool: 'sourceMap',
   module: {
     rules: [{
       test: '/\.js$/',
@@ -20,7 +21,7 @@ module.exports = [{
     prestashop: 'prestashop'
   },
   plugins: [
-    new UglifyJsPlugin()
+    
   ]
 
 }, {
@@ -30,7 +31,7 @@ module.exports = [{
     filename: 'theme.css',
     path: '../assets/css'
   },
-  devtool: 'source-map',
+  devtool: 'eval-source-map',
   module: {
     rules: [
       {
