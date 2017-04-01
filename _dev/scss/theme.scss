@@ -46,9 +46,11 @@
 
 .page-wrapper{
 	margin-top: 56px;
-	padding-top: 0.1rem;
 }
 
-// HTML Components
+#customText{
+	padding: $spacer;
+	margin: $spacer*2 0;	
+}
 
 

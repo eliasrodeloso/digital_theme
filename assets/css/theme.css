@@ -273,7 +273,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: #292b2c;
-  background-color: #eceeef; }
+  background-color: #f7f7f7; }
 
 [tabindex="-1"]:focus {
   outline: none !important; }
@@ -1532,7 +1532,7 @@ pre {
   .table tbody + tbody {
     border-top: 2px solid #eceeef; }
   .table .table {
-    background-color: #eceeef; }
+    background-color: #f7f7f7; }
 
 .table-sm th,
 .table-sm td {
@@ -1622,7 +1622,7 @@ pre {
   .table-inverse th,
   .table-inverse td,
   .table-inverse thead th {
-    border-color: #eceeef; }
+    border-color: #f7f7f7; }
   .table-inverse.table-bordered {
     border: 0; }
 
@@ -1985,21 +1985,21 @@ fieldset[disabled] a.btn {
 
 .btn-secondary {
   color: #292b2c;
-  background-color: #eceeef;
+  background-color: #f7f7f7;
   border-color: #ccc; }
   .btn-secondary:hover {
     color: #292b2c;
-    background-color: #d0d5d8;
+    background-color: #dedede;
     border-color: #adadad; }
   .btn-secondary:focus, .btn-secondary.focus {
     box-shadow: 0 0 0 2px rgba(204, 204, 204, 0.5); }
   .btn-secondary.disabled, .btn-secondary:disabled {
-    background-color: #eceeef;
+    background-color: #f7f7f7;
     border-color: #ccc; }
   .btn-secondary:active, .btn-secondary.active,
   .show > .btn-secondary.dropdown-toggle {
     color: #292b2c;
-    background-color: #d0d5d8;
+    background-color: #dedede;
     background-image: none;
     border-color: #adadad; }
 
@@ -2218,7 +2218,7 @@ fieldset[disabled] a.btn {
     text-decoration: underline;
     background-color: transparent; }
   .btn-link:disabled {
-    color: #636c72; }
+    color: #f2f2f2; }
     .btn-link:disabled:focus, .btn-link:disabled:hover {
       text-decoration: none; }
 
@@ -4467,7 +4467,7 @@ button.close {
   vertical-align: text-top !important; }
 
 .bg-faded {
-  background-color: #e4e7e8; }
+  background-color: #efefef; }
 
 .bg-primary {
   background-color: #000066 !important; }
@@ -9302,9 +9302,8 @@ Utilidades varias
           animation-duration: 0.5s; }
 
 #carouselHome {
-  width: 100%;
-  margin-top: 1rem;
-  box-shadow: 0 0 1em rgba(41, 43, 44, 0.8); }
+  width: 70%;
+  margin-top: 0; }
   #carouselHome figure {
     margin: 0; }
   #carouselHome .carousel-caption {
@@ -9358,5 +9357,8 @@ Utilidades varias
   display: block !important; }
 
 .page-wrapper {
-  margin-top: 56px;
-  padding-top: 0.1rem; }
+  margin-top: 56px; }
+
+#customText {
+  padding: 1rem;
+  margin: 2rem 0; }

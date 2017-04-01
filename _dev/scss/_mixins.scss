@@ -5,3 +5,7 @@
 		background-color: lighten($brand-primary, 5%)
 	}
 }
+
+@mixin box-shadow{
+	box-shadow: 0 0 1em rgba( $gray-dark , 0.8);
+}
