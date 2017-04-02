@@ -1,7 +1,8 @@
 
 #carouselHome{
-	width: 70%;
+	width: 100%;
 	margin-top: 0;
+	padding: $spacer $spacer 0 0;
 
 	figure {
 		margin: 0;
@@ -9,11 +10,16 @@
 
 	.carousel-caption {
 		right: 0;
-		left: 0;
-		bottom: 0;
-		padding: $spacer $spacer*4 $spacer*2 $spacer*4;
-		width: 100%;
-		background-image: linear-gradient(to top, rgba( $gray-dark , 0.6), rgba( $gray, 0.0 ));
+		left: $spacer*2;
+		bottom: $spacer*6;
+		padding: $spacer;
+		width: 40%;
+		
+		h1{
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		
 	}
 
 	.carousel-indicators{

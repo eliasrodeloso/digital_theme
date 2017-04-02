@@ -25,7 +25,7 @@
 
 <!-- Static Block module -->
 
-<div id="customHtmlTopHome" class="col-2">
+<div id="customHtmlTopHome" class="col-sm-12 col-md-3">
 	{if $page_name == 'index'}
 		{foreach from=$block_list item=block}
 			{if isset($block.content)}

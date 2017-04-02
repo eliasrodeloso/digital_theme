@@ -1,4 +1,4 @@
-<div class="col-10">
+<div class="col-sm-12 col-md-9">
   {if $homeslider.slides}
     <div id="carouselHome" class="carousel slide hidden-sm-down" data-interval="{$homeslider.speed}" data-wrap="{(string)$homeslider.wrap}" data-pause="{$homeslider.pause}" >
       <div role="listbox" class="carousel-inner">
@@ -7,9 +7,9 @@
             <img src="{$slide.image_url}" alt="{$slide.legend|escape}" class="d-block img-fluid">
             {if $slide.title || $slide.description}
               <figcaption class="carousel-caption d-none d-md-block">
-                <h3 class="dt-delay-1" data-animation="animated fadeIn">{$slide.title}</h3>
+                <h1 class="dt-delay-1" data-animation="animated fadeIn">{$slide.title}</h1>
                 {$slide.description nofilter}
-                <a data-animation="animated fadeIn" href="{$slide.url}" class="btn btn-outline-secondary dt-upper dt-delay-3">
+                <a data-animation="animated fadeIn" href="{$slide.url}" class="btn btn-outline-primary dt-upper dt-delay-3">
                   {l s='Buy now >>' d='Shop.Theme.Actions'}
                 </a>
               </figcaption>
