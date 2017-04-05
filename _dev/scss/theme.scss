@@ -1,13 +1,14 @@
+@import '_fonts';
 @import '~bootstrap/scss/bootstrap';
 @import '~animate.css/animate';
 @import '_mixins';
-@import '_fonts';
 @import '_utilities';
 @import 'components/searchbar';
 @import 'components/shoppingcart';
 @import 'components/customeraccount';
 @import 'components/slider';
 @import 'components/blockreassurance';
+@import 'components/product-miniture';
 
 .dt-btn-dropdown-header{
 
@@ -54,4 +55,11 @@
 	margin: $spacer*2 0;	
 }
 
-
+#featuredProducts{
+	h2{
+		line-height: $line-height-lg;
+		border-bottom: 2px solid $pink;
+		margin-bottom: $spacer*2;
+		padding: 0 1rem;
+	}
+}

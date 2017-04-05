@@ -1,0 +1,93 @@
+
+.dt-product-miniature{
+
+	&:hover{
+		border: 1px solid $pink;
+		transition: all 300ms linear;
+	}
+
+	a{
+		color: $gray-dark;
+		&:hover{
+			text-decoration: none;
+			transition: all 300ms linear;
+			color: $pink;
+		}
+	}
+
+	h6{
+		font-size: 1rem;
+	}
+	
+}
+
+.rating-product{
+	color: $yellow;
+}
+
+.dt-regular-price{
+	color: $red;
+	font-weight: bold;
+	text-align: center;
+	margin: 0;
+}
+
+.dt-discount-percentage{
+	background-color: $pink;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 30px;
+	right: 15px;
+	color: $gray-lightest;
+	line-height: 40px;
+	font-size: $font-size-sm;
+	font-weight: bold;
+	text-align: center;
+	@include box-shadow-1;
+}
+
+.dt-discounted-price{
+	font-weight: bold;
+	text-align: center;
+}
+
+.dt-undiscounted-price{
+	font-weight: bold;
+	text-align: center;
+	line-height: $line-height-sm*2;
+}
+
+.dt-product-flags{
+	.on-sale{
+		width: 100%;
+		background-color: $blue;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include box-shadow-1;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 0.1rem 0;
+		color: $gray-lightest;
+		border-top-left-radius: 0.25rem;
+		border-top-right-radius: 0.25rem;
+	}
+
+	.new{
+		position: absolute;
+		top: 30px;
+		left: -5px;
+		color: $gray-lightest;
+		background-color: $orange;
+		padding: 0.1rem 0.2rem;
+		@include box-shadow-1;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.discount{
+		display: none;
+	}
+}

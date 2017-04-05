@@ -1,3 +1,4 @@
+
 <div class="col-sm-12 col-md-9">
   {if $homeslider.slides}
     <div id="carouselHome" class="carousel slide hidden-sm-down" data-interval="{$homeslider.speed}" data-wrap="{(string)$homeslider.wrap}" data-pause="{$homeslider.pause}" >

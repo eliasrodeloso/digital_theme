@@ -40,10 +40,13 @@ Utilidades varias
 
 .dt-width-max{
 	width: 100%;
-	max-width: 100%;
 }
 
 .dt-sm{
 	font-size: 0.5rem !important;
 	font-weight: 400 !important;
+}
+
+button, input, optgroup, select, textarea{
+	font-family: $font-family-sans-serif;
 }

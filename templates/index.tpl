@@ -7,10 +7,10 @@
     <div id="hookDisplayTopHome" class="row no-gutters">
       {hook h='displayTopHome'}
     </div>
-
+    {*
     {block name='hook_reassurance'}
       {hook h='displayReassurance'}
-    {/block}
+    {/block}*}
 
     <div id="displayCenterHome" class="row no-gutters">
       {hook h='displayCenterHome'}

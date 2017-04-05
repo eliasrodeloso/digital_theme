@@ -194,6 +194,7 @@
           {/block}
 
           {block name='product_footer'}
+            {hook h='displayProductListReviews' product=$product}
             {hook h='displayFooterProduct' product=$product category=$category}
           {/block}
 

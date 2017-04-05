@@ -2,10 +2,15 @@
 
 @mixin hover-color{
 	&:hover{
-		background-color: lighten($brand-primary, 5%)
+		background-color: lighten($brand-primary, 5%);
+		transition: 0.2s;
 	}
 }
 
-@mixin box-shadow{
+@mixin box-shadow-2{
 	box-shadow: 0 0 1em rgba( $gray-dark , 0.8);
+}
+
+@mixin box-shadow-1{
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.375)
 }
