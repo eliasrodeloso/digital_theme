@@ -60,10 +60,16 @@
 
   </div>
 
+  {block name='hook_footer_before'}
+    {hook h='displayFooterBefore'}
+  {/block}
+
   <footer id="footer">
-    {block name='footer'}
-      {include file='_partials/footer.tpl'}
-    {/block}
+    <div class="container">
+      {block name='footer'}
+        {include file='_partials/footer.tpl'}
+      {/block}
+    </div>
   </footer>
 
   {block name='javascript_bottom'}

@@ -16,6 +16,7 @@ import 'bootstrap';
 
 import './components/dropdowns';
 import './components/slider';
+import './components/newsletter';
 
 import prestashop from 'prestashop';
 import EventEmitter from 'events';

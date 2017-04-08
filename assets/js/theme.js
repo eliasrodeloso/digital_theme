@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -103,6 +103,12 @@ $('#dropdownCustomer').on('hidden.bs.dropdown', function () {
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports) {
 
 
@@ -157,7 +163,7 @@ $().ready( function () {
 
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports) {
 
 /*!
@@ -3698,7 +3704,7 @@ var Popover = function ($) {
 
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports) {
 
 // Copyright Joyent, Inc. and other Node contributors.
@@ -4006,14 +4012,14 @@ function isUndefined(arg) {
 
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["Tether"] = __webpack_require__(7);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["Tether"] = __webpack_require__(8);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -14240,13 +14246,13 @@ return jQuery;
 
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports) {
 
 module.exports = prestashop;
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! tether 1.4.0 */
@@ -16067,7 +16073,7 @@ return Tether;
 
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports) {
 
 var g;
@@ -16094,25 +16100,27 @@ module.exports = g;
 
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_expose_loader_Tether_tether__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_expose_loader_Tether_tether__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_expose_loader_Tether_tether___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_expose_loader_Tether_tether__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_bootstrap__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_dropdowns__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_dropdowns___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_dropdowns__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_slider__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_slider__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_slider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_slider__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_prestashop__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_prestashop___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_prestashop__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_events__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_events___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_events__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_newsletter__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_newsletter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_newsletter__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_prestashop__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_prestashop___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_prestashop__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_events__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_events___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_events__);
 /**
  * 
  * DISCLAIMER
@@ -16135,8 +16143,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-for (var i in __WEBPACK_IMPORTED_MODULE_6_events___default.a.prototype) {
-  __WEBPACK_IMPORTED_MODULE_5_prestashop___default.a[i] = __WEBPACK_IMPORTED_MODULE_6_events___default.a.prototype[i];
+
+for (var i in __WEBPACK_IMPORTED_MODULE_7_events___default.a.prototype) {
+  __WEBPACK_IMPORTED_MODULE_6_prestashop___default.a[i] = __WEBPACK_IMPORTED_MODULE_7_events___default.a.prototype[i];
 }
 
 

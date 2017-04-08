@@ -1746,7 +1746,7 @@ pre {
   .form-control:focus {
     color: #757575;
     background-color: #fff;
-    border-color: #0000e6;
+    border-color: #9acffa;
     outline: none; }
   .form-control::-webkit-input-placeholder {
     color: #bdbdbd;
@@ -2044,7 +2044,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     text-decoration: none; }
   .btn:focus, .btn.focus {
     outline: 0;
-    box-shadow: 0 0 0 2px rgba(0, 0, 102, 0.25); }
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.25); }
   .btn.disabled, .btn:disabled {
     cursor: not-allowed;
     opacity: .65; }
@@ -2057,23 +2057,23 @@ fieldset[disabled] a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #000066;
-  border-color: #000066; }
+  background-color: #2196f3;
+  border-color: #2196f3; }
   .btn-primary:hover {
     color: #fff;
-    background-color: #000033;
-    border-color: #000029; }
+    background-color: #0c7cd5;
+    border-color: #0b76cc; }
   .btn-primary:focus, .btn-primary.focus {
-    box-shadow: 0 0 0 2px rgba(0, 0, 102, 0.5); }
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.5); }
   .btn-primary.disabled, .btn-primary:disabled {
-    background-color: #000066;
-    border-color: #000066; }
+    background-color: #2196f3;
+    border-color: #2196f3; }
   .btn-primary:active, .btn-primary.active,
   .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #000033;
+    background-color: #0c7cd5;
     background-image: none;
-    border-color: #000029; }
+    border-color: #0b76cc; }
 
 .btn-secondary {
   color: #424242;
@@ -2176,24 +2176,24 @@ fieldset[disabled] a.btn {
     border-color: #821414; }
 
 .btn-outline-primary {
-  color: #000066;
+  color: #2196f3;
   background-image: none;
   background-color: transparent;
-  border-color: #000066; }
+  border-color: #2196f3; }
   .btn-outline-primary:hover {
     color: #fff;
-    background-color: #000066;
-    border-color: #000066; }
+    background-color: #2196f3;
+    border-color: #2196f3; }
   .btn-outline-primary:focus, .btn-outline-primary.focus {
-    box-shadow: 0 0 0 2px rgba(0, 0, 102, 0.5); }
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.5); }
   .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-    color: #000066;
+    color: #2196f3;
     background-color: transparent; }
   .btn-outline-primary:active, .btn-outline-primary.active,
   .show > .btn-outline-primary.dropdown-toggle {
     color: #fff;
-    background-color: #000066;
-    border-color: #000066; }
+    background-color: #2196f3;
+    border-color: #2196f3; }
 
 .btn-outline-secondary {
   color: #ccc;
@@ -2745,12 +2745,12 @@ tbody.collapse.show {
   opacity: 0; }
   .custom-control-input:checked ~ .custom-control-indicator {
     color: #fff;
-    background-color: #000066; }
+    background-color: #2196f3; }
   .custom-control-input:focus ~ .custom-control-indicator {
-    box-shadow: 0 0 0 1px #eeeeee, 0 0 0 3px #000066; }
+    box-shadow: 0 0 0 1px #eeeeee, 0 0 0 3px #2196f3; }
   .custom-control-input:active ~ .custom-control-indicator {
     color: #fff;
-    background-color: #1a1aff; }
+    background-color: #cae6fc; }
   .custom-control-input:disabled ~ .custom-control-indicator {
     cursor: not-allowed;
     background-color: #eeeeee; }
@@ -2782,7 +2782,7 @@ tbody.collapse.show {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"); }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-indicator {
-  background-color: #000066;
+  background-color: #2196f3;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath stroke='%23fff' d='M0 2h4'/%3E%3C/svg%3E"); }
 
 .custom-radio .custom-control-indicator {
@@ -2819,7 +2819,7 @@ tbody.collapse.show {
   -moz-appearance: none;
   -webkit-appearance: none; }
   .custom-select:focus {
-    border-color: #0000e6;
+    border-color: #9acffa;
     outline: none; }
     .custom-select:focus::-ms-value {
       color: #757575;
@@ -3374,8 +3374,8 @@ tbody.collapse.show {
   margin-left: -0.625rem; }
 
 .card-primary {
-  background-color: #000066;
-  border-color: #000066; }
+  background-color: #2196f3;
+  border-color: #2196f3; }
   .card-primary .card-header,
   .card-primary .card-footer {
     background-color: transparent; }
@@ -3410,7 +3410,7 @@ tbody.collapse.show {
 
 .card-outline-primary {
   background-color: transparent;
-  border-color: #000066; }
+  border-color: #2196f3; }
 
 .card-outline-secondary {
   background-color: transparent;
@@ -4562,10 +4562,10 @@ button.close {
   background-color: #e6e6e6; }
 
 .bg-primary {
-  background-color: #000066 !important; }
+  background-color: #2196f3 !important; }
 
 a.bg-primary:focus, a.bg-primary:hover {
-  background-color: #000033 !important; }
+  background-color: #0c7cd5 !important; }
 
 .bg-success {
   background-color: #1b5e20 !important; }
@@ -6721,10 +6721,10 @@ a.text-muted:focus, a.text-muted:hover {
   color: #a4a4a4 !important; }
 
 .text-primary {
-  color: #000066 !important; }
+  color: #2196f3 !important; }
 
 a.text-primary:focus, a.text-primary:hover {
-  color: #000033 !important; }
+  color: #0c7cd5 !important; }
 
 .text-success {
   color: #1b5e20 !important; }
@@ -9192,13 +9192,72 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
+/*  Material Design color palette (full) downloaded from
+ *  http://htmlcolorcodes.com/color-charts/
+ *
+ *  Check out our powerful color picker
+ *  http://htmlcolorcodes.com/color-picker/
+ *
+ *  Want to learn more about colors in SCSS?
+ *  http://htmlcolorcodes.com/tutorials/
+ *
+ *  - - - - - - - - - - - - - - - - - - 
+ *  Credits:
+ *
+ *  Original color palette by
+ *  https://www.google.com/design/spec/style/color.html
+ *
+ *  - - - - - - - - - - - - - - - - - -
+ *  How to use:
+ *  
+ *  Include this file with your other .scss files:
+ *
+ *  @import "material_colors_full";
+ *  
+ *  and use the color variables in your stylesheets:
+ *	
+ *  .class {
+ *    color: $red-500;
+ *  }
+ *
+ *  - - - - - - - - - - - - - - - - - -
+ *  Note:
+ *
+ *  $color and $color-500 are the same, simply there
+ *  for your convenience.
+ *
+ *  Variables with numbers prefixed by 'a' are accent colors
+ */
+/* Red */
+/* Pink */
+/* Purple */
+/* Deep Purple */
+/* Indigo */
+/* Blue */
+/* Light Blue */
+/* Cyan */
+/* Teal */
+/* Green */
+/* Light Green */
+/* Lime */
+/* Yellow */
+/* Amber */
+/* Orange */
+/* Deep Orange */
+/* Brown */
+/* Grey */
+/* Blue Grey */
+/* White / Black */
+/*  Want more? Check our our other color palettes at
+ *  http://htmlcolorcodes.com/color-charts/
+ */
 /**
 
 Utilidades varias
 
 **/
 .dt-blue-text, .dt-label {
-  color: #000066; }
+  color: #2196f3; }
 
 .dt-no-wrap {
   white-space: nowrap; }
@@ -9208,7 +9267,7 @@ Utilidades varias
 
 .dark-backdrop {
   z-index: 990;
-  background-color: #000;
+  background-color: #000000;
   opacity: 0.5;
   right: 0;
   left: 0;
@@ -9255,7 +9314,7 @@ button, input, optgroup, select, textarea {
   font-size: 1rem;
   line-height: 1.25;
   color: #424242;
-  background-color: #fff;
+  background-color: #ffffff;
   background-image: none;
   background-clip: padding-box;
   border-top: 1px solid #757575;
@@ -9267,8 +9326,8 @@ button, input, optgroup, select, textarea {
   transition: border-color opacity 0.15s linear, box-shadow opacity 0.15s linear;
   width: 90%; }
   #dt-search-bar .dt-form-control:focus {
-    border-color: #000066;
-    background-color: #fff;
+    border-color: #2196f3;
+    background-color: #ffffff;
     color: #424242; }
   #dt-search-bar .dt-form-control::-webkit-input-placeholder {
     color: rgba(117, 117, 117, 0.75);
@@ -9285,16 +9344,16 @@ button, input, optgroup, select, textarea {
 
 #dt-search-bar #dt-search-button {
   width: 10%;
-  background-color: #000066;
+  background-color: #2196f3;
   color: #fafafa;
-  border: 1px solid #000044;
+  border: 1px solid #42a5f5;
   border-radius: 0 3px 3px 0;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
   #dt-search-bar #dt-search-button:hover {
-    background-color: navy;
+    background-color: #39a1f4;
     -webkit-transition: 0.2s;
     transition: 0.2s; }
 
@@ -9373,7 +9432,7 @@ button, input, optgroup, select, textarea {
   margin-right: 1rem;
   padding: 1rem;
   font-size: 0.875rem;
-  border: 2px #000066 solid;
+  border: 2px #2196f3 solid;
   background-color: #fafafa; }
   #blockReassurance .block-text:nth-child(3) {
     margin-right: 0 !important; }
@@ -9469,7 +9528,7 @@ button, input, optgroup, select, textarea {
     display: none;
     content: ""; }
   .dt-btn-dropdown-header:hover {
-    color: #000066;
+    color: #2196f3;
     background-color: #fafafa; }
 
 .dt-navbar {
@@ -9478,12 +9537,12 @@ button, input, optgroup, select, textarea {
 
 .dt-toggler-menu {
   color: #fafafa;
-  background-color: #000066;
+  background-color: #2196f3;
   border: 0;
   cursor: pointer;
   height: 100%; }
   .dt-toggler-menu:hover {
-    background-color: navy;
+    background-color: #39a1f4;
     -webkit-transition: 0.2s;
     transition: 0.2s; }
 
@@ -9502,3 +9561,57 @@ button, input, optgroup, select, textarea {
   border-bottom: 2px solid #e91e63;
   margin-bottom: 2rem;
   padding: 0 1rem; }
+
+#emailFooterSuscription {
+  background-color: #2196f3; }
+  #emailFooterSuscription .dt-email {
+    padding: 2rem 0; }
+    #emailFooterSuscription .dt-email form .dt-form-group {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      max-width: 80%;
+      -webkit-box-flex: 1;
+          -ms-flex: 1 100%;
+              flex: 1 100%; }
+      #emailFooterSuscription .dt-email form .dt-form-group input {
+        padding: 0.5rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #757575;
+        background-color: #fafafa;
+        background-clip: padding-box;
+        border-right: none;
+        border-top: 2px solid rgba(0, 0, 0, 0.25);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+        border-left: 2px solid rgba(0, 0, 0, 0.25);
+        -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+        #emailFooterSuscription .dt-email form .dt-form-group input[type="submit"] {
+          border-left: none;
+          border-right: 2px solid rgba(0, 0, 0, 0.25);
+          background-color: #e91e63;
+          color: #fafafa;
+          text-transform: uppercase; }
+          #emailFooterSuscription .dt-email form .dt-form-group input[type="submit"]:hover {
+            background-color: #ec407a;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out; }
+    #emailFooterSuscription .dt-email form span {
+      color: #fafafa;
+      font-size: 0.875rem; }
+      #emailFooterSuscription .dt-email form span::before {
+        content: "*";
+        margin-right: 0.5rem; }
+    #emailFooterSuscription .dt-email h5 {
+      display: inline;
+      margin: 0;
+      color: #fafafa; }
+
+#footer {
+  background-color: #1e88e5;
+  color: #fafafa; }
