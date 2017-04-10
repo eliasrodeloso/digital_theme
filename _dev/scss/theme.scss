@@ -153,4 +153,14 @@
 			color: $grey-100
 		}
 	}
+
+	.footer-right{
+		border-left: $border-width solid $grey-50;
+	}
+
+	.footer-after{
+		margin-top: $spacer;
+		padding-top: $spacer;
+		border-top: $border-width solid $grey-50;
+	}
 }

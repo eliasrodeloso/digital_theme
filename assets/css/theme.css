@@ -9716,5 +9716,11 @@ button, input, optgroup, select, textarea {
     color: #fafafa; }
     #footer a:hover {
       color: #f5f5f5; }
+  #footer .footer-right {
+    border-left: 2px solid #fafafa; }
+  #footer .footer-after {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid #fafafa; }
 
 /*# sourceMappingURL=theme.css.map*/

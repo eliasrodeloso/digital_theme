@@ -24,22 +24,23 @@
 *}
 
 <div class="block-contact">
-	<h6 class="text-uppercase">{l s='Store information' d='Modules.ContactInfo.Shop'}</h6>
-  <div class="vcard">
-    <div class="fn org">{$contact_infos.company}</div>
+	<p class="vcard text-center">
+    <span class="fn org mr-2">{$contact_infos.company}</span>
     <img src="{$shop.logo}" alt="{$shop.name}" class="d-none photo">
-    <div class="tel">
-      {$contact_infos.fax} - {$contact_infos.phone}
-    </div>
-    <a href="mailto:{$contact_infos.email}" class="email">{$contact_infos.email}</a>
-    <div class="adr">
-      <div>
-        <span class="street-name">{$contact_infos.address.address1} {$contact_infos.address.address2}</span>
-        <span class="postal-code">{$contact_infos.address.postcode}</span>
-      </div>
-      <div>
+    <span class="tel mr-2">
+      <i class="material-icons md-18 mr-2">call</i>{$contact_infos.fax} - {$contact_infos.phone}
+    </span>
+    <a href="mailto:{$contact_infos.email}" class="email mr-2">
+      <i class="material-icons md-18 mr-2">mail_outline</i>
+      <span class="my-2">{$contact_infos.email}</span>
+    </a>
+    <span class="adr mr-2">
+      
+        <span class="street-name">
+        <i class="material-icons md-18 mr-2">location_on</i>{$contact_infos.address.address1} - {$contact_infos.address.address2}</span>
+        <span class="postal-code">ZIP: {$contact_infos.address.postcode}</span>
+      
         <span class="locality">{$contact_infos.address.city}</span>, <span class="region">{$contact_infos.address.state}</span> - <span class="country-name">{$contact_infos.address.country}</span>
-      </div>
-    </div>
-  </div>
+    </span>
+  </p>
 </div>
