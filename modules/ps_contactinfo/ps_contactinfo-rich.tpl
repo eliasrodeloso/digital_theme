@@ -25,7 +25,11 @@
 
 <div class="block-contact col-sm-12 col-md-3">
   <h4>{l s='Store information' d='Modules.ContactInfo.Shop'}</h4>
-  {$contact_infos.address.formatted nofilter}
+  <div class="vcard">
+    
+  </div>
+  {$contact_infos.company}
+  {$contact_infos.address.address1}
   {if $contact_infos.phone}
     <br>
     {* First tag [1][/1] is for a HTML tag. *}

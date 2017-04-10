@@ -24,39 +24,22 @@
 *}
 
 <div class="block-contact">
-	<h4>{l s='Contact us' d='Modules.ContactInfo.Shop'}</h4>
-    {$contact_infos.address.formatted nofilter}
-    {if $contact_infos.phone}
-      <br>
-      {* First tag [1][/1] is for a HTML tag. *}
-      {l
-        s='Tel: %phone%'
-        sprintf=[
-          '%phone%' => $contact_infos.phone
-        ]
-        d='Modules.ContactInfo.Shop'
-      }
-    {/if}
-    {if $contact_infos.fax}
-      <br>
-      {* First tag [1][/1] is for a HTML tag. *}
-      {l
-        s='Fax: %fax%'
-        sprintf=[
-          '%fax%' => $contact_infos.fax
-        ]
-        d='Modules.ContactInfo.Shop'
-      }
-    {/if}
-    {if $contact_infos.email}
-      <br>
-      {* First tag [1][/1] is for a HTML tag. *}
-      {l
-        s='Email: %email%'
-        sprintf=[
-          '%email%' => $contact_infos.email
-        ]
-        d='Modules.ContactInfo.Shop'
-      }
-    {/if}
+	<h6 class="text-uppercase">{l s='Store information' d='Modules.ContactInfo.Shop'}</h6>
+  <div class="vcard">
+    <div class="fn org">{$contact_infos.company}</div>
+    <img src="{$shop.logo}" alt="{$shop.name}" class="d-none photo">
+    <div class="tel">
+      {$contact_infos.fax} - {$contact_infos.phone}
+    </div>
+    <a href="mailto:{$contact_infos.email}" class="email">{$contact_infos.email}</a>
+    <div class="adr">
+      <div>
+        <span class="street-name">{$contact_infos.address.address1} {$contact_infos.address.address2}</span>
+        <span class="postal-code">{$contact_infos.address.postcode}</span>
+      </div>
+      <div>
+        <span class="locality">{$contact_infos.address.city}</span>, <span class="region">{$contact_infos.address.state}</span> - <span class="country-name">{$contact_infos.address.country}</span>
+      </div>
+    </div>
+  </div>
 </div>

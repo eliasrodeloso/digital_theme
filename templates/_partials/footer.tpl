@@ -1,8 +1,16 @@
 
 <div class="row no-gutters">
-  {block name='hook_footer'}
-    {hook h='displayFooter'}
-  {/block}
+  <div class="col-sm-12 col-md-9">
+    <div class="row no-gutters">
+      {block name='hook_footer'}
+        {hook h='displayFooter'}
+      {/block}  
+    </div>
+  </div>
+  
+  <div class="col-sm-12 col-md-3">
+    {hook h='displayFooterRight'}
+  </div>
 
   {block name='hook_footer_after'}
     {hook h='displayFooterAfter'}
