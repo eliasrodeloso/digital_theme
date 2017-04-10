@@ -12,12 +12,12 @@
    version="1.1"
    viewBox="0 0 430.1 430.1"
    xml:space="preserve"
-   sodipodi:docname="f-hover.svg"
+   sodipodi:docname="v.svg"
    inkscape:version="0.92.1 r15371"><metadata
-     id="metadata12"><rdf:RDF><cc:Work
+     id="metadata3741"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
-     id="defs10" /><sodipodi:namedview
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs3739" /><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
@@ -28,7 +28,7 @@
      inkscape:pageshadow="2"
      inkscape:window-width="640"
      inkscape:window-height="480"
-     id="namedview8"
+     id="namedview3737"
      showgrid="false"
      inkscape:zoom="0.54870959"
      inkscape:cx="215.05"
@@ -37,10 +37,9 @@
      inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="Capa_1" /><g
-     id="g5"
-     transform="matrix(1,0,0,0.92374654,0,16.394494)"><g
-       id="g3"><path
-         d="m 158.1,83.3 c 0,10.8 0,59.2 0,59.2 h -43.4 v 72.4 h 43.4 v 215.2 h 89.1 V 214.9 H 307 c 0,0 5.6,-34.7 8.3,-72.7 -7.8,0 -67.8,0 -67.8,0 0,0 0,-42.1 0,-49.5 0,-7.4 9.7,-17.4 19.3,-17.4 9.6,0 29.8,0 48.6,0 0,-9.9 0,-43.9 0,-75.4 -25,0 -53.5,0 -66,0 -93.5,0.1 -91.3,72.6 -91.3,83.4 z"
-         id="Facebook"
-         inkscape:connector-curvature="0"
-         style="fill:#64b5f6" /></g></g></svg>
+     id="g3734"
+     transform="matrix(0.9406918,0,0,0.97066736,12.757204,6.309681)"><g
+       id="g3732"><path fill="#64b5f6"
+         d="m 367.2,28.8 c -59.8,-2 -100.3,31.6 -121.4,100.7 10.9,-4.5 21.5,-6.8 31.9,-6.8 21.8,0 31.5,12.2 28.9,36.8 -1.3,14.9 -10.9,36.5 -28.9,64.9 -18,28.4 -31.5,42.6 -40.5,42.6 -11.6,0 -22.2,-22 -31.9,-65.8 -3.2,-12.9 -9,-45.8 -17.3,-98.8 -7.8,-49 -28.3,-72 -61.7,-68.7 C 112.2,34.9 91,47.8 62.7,72.3 42.1,91 21.2,109.8 0,128.5 l 20.2,26.1 C 39.5,141 50.8,134.3 54,134.3 c 14.8,0 28.6,23.2 41.5,69.7 11.5,42.6 23.2,85.2 34.7,127.8 17.3,46.5 38.5,69.7 63.6,69.7 40.5,0 90,-38.1 148.5,-114.2 C 398.8,214.4 428,156.9 430,115 432.5,58.8 411.6,30 367.2,28.8 Z"
+         id="Vimeo"
+         inkscape:connector-curvature="0" /></g></g></svg>

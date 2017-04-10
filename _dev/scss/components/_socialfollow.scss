@@ -29,7 +29,7 @@
 				white-space: nowrap;
 				text-indent: 100%;
 				overflow: hidden;
-				
+
 				&:hover {
 					color: transparent;
 				}
@@ -39,15 +39,36 @@
 	}
 
 	.facebook{
-		background-image: url('../img/f.svg');
 
-		&::before{
-			content: '';
-			background-image: url('../img/f.svg');
-		}
+		@include bg-img('../img/f.svg', '../img/f-hover.svg');
+	}
 
-		&:hover{
-			background-image: url('../img/f-hover.svg');
-		}
+	.twitter{
+		@include bg-img('../img/t.svg', '../img/t-hover.svg');
+	}
+
+	.rss{
+		@include bg-img('../img/r.svg', '../img/r-hover.svg');
+	}
+
+	.youtube{
+		@include bg-img('../img/y.svg', '../img/y-hover.svg');
+	}
+
+	.googleplus{
+		@include bg-img('../img/g.svg', '../img/g-hover.svg');
+	}
+
+	.pinterest{
+		@include bg-img('../img/p.svg', '../img/p-hover.svg');
+	}
+
+	.vimeo{
+		@include bg-img('../img/v.svg', '../img/v-hover.svg');
+	}
+
+	.instagram{
+		@include bg-img('../img/i.svg', '../img/i-hover.svg');
+		
 	}
 }

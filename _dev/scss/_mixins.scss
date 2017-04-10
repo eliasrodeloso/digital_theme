@@ -14,3 +14,17 @@
 @mixin box-shadow-1{
 	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.375)
 }
+
+@mixin bg-img($file-name, $file-name-hover){
+	
+	background-image: url($file-name);
+
+		&:hover{
+			background-image: url($file-name-hover);
+		}
+
+		&::before{
+			content: '';
+			background-image: url($file-name);
+		}
+}
