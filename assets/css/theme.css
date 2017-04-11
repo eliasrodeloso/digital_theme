@@ -9265,6 +9265,9 @@ Utilidades varias
 .dt-no-wrap {
   white-space: nowrap; }
 
+.dt-show {
+  display: block !important; }
+
 .dt-upper {
   text-transform: uppercase; }
 
@@ -9298,6 +9301,9 @@ Utilidades varias
 
 button, input, optgroup, select, textarea {
   font-family: "Lato", "Montserrat", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+.page-wrapper {
+  margin-top: 92px; }
 
 /**
 
@@ -9381,15 +9387,15 @@ button, input, optgroup, select, textarea {
   text-align: center; }
 
 #dropdownShopping > .dropdown-menu {
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s; }
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s; }
 
 /**
 	Estilos para el modulo ps_customeraccountlinks
 */
 #dropdownCustomer > .dropdown-menu {
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s; }
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s; }
 
 #carouselHome {
   width: 100%;
@@ -9604,37 +9610,60 @@ button, input, optgroup, select, textarea {
     content: '';
     background-image: url(../css/fonts/904eb9ea32d93055eeab52e814e5438c.svg); }
 
-.dt-btn-dropdown-header {
+#main-menu {
+  display: none;
+  width: 100px;
+  height: 100px;
+  z-index: 1000;
+  position: absolute;
+  top: 50px;
+  left: 50px; }
+
+#header .before-nav {
+  background-color: #fafafa;
+  border-bottom: 1px solid #9e9e9e; }
+  #header .before-nav .btn-secondary {
+    color: #2196f3;
+    background-color: transparent;
+    border: 0;
+    border-right: 1px solid #9e9e9e;
+    border-left: 1px solid #9e9e9e; }
+    #header .before-nav .btn-secondary:hover {
+      color: #42a5f5;
+      text-decoration: transparent;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+  #header .before-nav .dropdown-menu {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s; }
+  #header .before-nav #dropdownCurrency {
+    border-left: 0; }
+
+#header .dt-btn-dropdown-header {
   color: #424242;
   border-radius: 0;
   background-color: transparent; }
-  .dt-btn-dropdown-header::after {
+  #header .dt-btn-dropdown-header::after {
     display: none;
     content: ""; }
-  .dt-btn-dropdown-header:hover {
+  #header .dt-btn-dropdown-header:hover {
     color: #2196f3;
     background-color: #fafafa; }
 
-.dt-navbar {
+#header .dt-navbar {
   background-color: #fafafa;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25); }
 
-.dt-toggler-menu {
+#header .dt-toggler-menu {
   color: #fafafa;
   background-color: #2196f3;
   border: 0;
   cursor: pointer;
   height: 100%; }
-  .dt-toggler-menu:hover {
+  #header .dt-toggler-menu:hover {
     background-color: #42a5f5;
     -webkit-transition: 0.2s;
     transition: 0.2s; }
-
-.dt-show {
-  display: block !important; }
-
-.page-wrapper {
-  margin-top: 56px; }
 
 #customText {
   padding: 1rem;

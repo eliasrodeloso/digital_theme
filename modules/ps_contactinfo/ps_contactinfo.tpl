@@ -14,6 +14,5 @@
       <i class="material-icons md-sm mr-1">mail_outline</i>
       <span class="my-2">{$contact_infos.email}</span>
     </a>
-    
   </p>
 </div>

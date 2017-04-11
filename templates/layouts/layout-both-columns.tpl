@@ -13,7 +13,7 @@
   {/block}
 
   <!-- Start page content-->
-  <header id="header">
+  <header id="header" class="fixed-top">
     {block name='header'}
       {include file='_partials/header.tpl'}
     {/block}

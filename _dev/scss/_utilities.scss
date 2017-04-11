@@ -11,6 +11,10 @@ Utilidades varias
   white-space: nowrap;
 }
 
+.dt-show{
+	display: block !important;
+}
+
 .dt-upper{
   text-transform: uppercase;
 }
@@ -49,4 +53,8 @@ Utilidades varias
 
 button, input, optgroup, select, textarea{
 	font-family: $font-family-sans-serif;
+}
+
+.page-wrapper{
+	margin-top: 92px;
 }

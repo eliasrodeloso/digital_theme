@@ -4,25 +4,19 @@
   </div>
 {/block}
 
-<div class="row no-gutters d-none">
-  <div class="">
-    <div class="container-fluid">
-      <nav class="navbar navbar-toggleable-md">
-        
-        {block name='header_top'}
-          <div class="header-top">
-            <div class="row justify-content-around align-items-center">
-              {hook h='displayTop'}
-            </div>
-          </div>
-        {/block}   
-      </nav>
+{block name='header_top'}
+  <div class="before-nav">
+    <div class="container">
+      <div class="row no-gutters justify-content-around align-items-center ">
+        {hook h='displayNav1'}
+      </div>
     </div>
   </div>
-</div>
+  
+{/block}   
 
 {block name='header_nav'}
-<nav class="navbar-light dt-navbar fixed-top">
+<nav class="navbar-light dt-navbar">
   <div class="row">
     <div class="col-12 hidden-sm-down">
       <div class="container">
@@ -30,11 +24,13 @@
           <div class="col-md-1 col-lg-1">
             <button class="dt-toggler-menu d-flex align-items-center flex-column" type="button" data-toggle="collapse" data-target="#dtMenu" aria-controls="dtMenu" aria-expanded="false" aria-label="Toggle navigation">
               <i class="material-icons md-36">&#xE5D2;</i>
-              <span class="dt-navtitle">{l s='Categorías' d='Shop.Theme.Actions'}</span>
-              
+              <span class="dt-navtitle">{l s='Categories' d='Shop.Theme.Actions'}</span>
             </button>
           </div>
-          
+          <div id="main-menu" class="row">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam facere eaque cum impedit nulla odit aliquid assumenda quia molestiae quos, dolore dignissimos earum provident illum sed dolor neque, repellat atque.</p>
+          </div>
+
           <div class="col-md-2 col-lg-2 d-flex justify-content-around align-items-center">
             {block name='header_logo'}
               <a href="{$urls.base_url}" title="{$shop.name}">
