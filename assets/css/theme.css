@@ -30,6 +30,9 @@
           font-feature-settings: 'liga'; }
 
 /* Rules for sizing the icon. */
+.md-sm {
+  font-size: 0.8rem; }
+
 .md-18 {
   font-size: 18px; }
 
@@ -9301,15 +9304,7 @@ button, input, optgroup, select, textarea {
 	Estilos para el modulo ps_searchbar
 
 */
-#dt-search-bar .dt-input-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%; }
-
-#dt-search-bar .dt-form-control {
+#dt-search-bar .dt-form-group input[type="text"] {
   padding: 0.5rem 0.75rem;
   font-size: 1rem;
   line-height: 1.25;
@@ -9317,43 +9312,42 @@ button, input, optgroup, select, textarea {
   background-color: #ffffff;
   background-image: none;
   background-clip: padding-box;
-  border-top: 1px solid #757575;
-  border-left: 1px solid #757575;
-  border-bottom: 1px solid #757575;
+  border-top: 2px solid #2196f3;
+  border-left: 2px solid #2196f3;
+  border-bottom: 2px solid #2196f3;
   border-right: 0;
-  border-radius: 3px 0 0 3px;
   -webkit-transition: border-color opacity 0.15s linear, box-shadow opacity 0.15s linear;
-  transition: border-color opacity 0.15s linear, box-shadow opacity 0.15s linear;
-  width: 90%; }
-  #dt-search-bar .dt-form-control:focus {
+  transition: border-color opacity 0.15s linear, box-shadow opacity 0.15s linear; }
+  #dt-search-bar .dt-form-group input[type="text"]:focus {
     border-color: #2196f3;
     background-color: #ffffff;
     color: #424242; }
-  #dt-search-bar .dt-form-control::-webkit-input-placeholder {
+  #dt-search-bar .dt-form-group input[type="text"]::-webkit-input-placeholder {
     color: rgba(117, 117, 117, 0.75);
     opacity: 0.75;
     font-family: "Lato", "Montserrat", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
-  #dt-search-bar .dt-form-control:-ms-input-placeholder {
+  #dt-search-bar .dt-form-group input[type="text"]:-ms-input-placeholder {
     color: rgba(117, 117, 117, 0.75);
     opacity: 0.75;
     font-family: "Lato", "Montserrat", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
-  #dt-search-bar .dt-form-control::placeholder {
+  #dt-search-bar .dt-form-group input[type="text"]::placeholder {
     color: rgba(117, 117, 117, 0.75);
     opacity: 0.75;
     font-family: "Lato", "Montserrat", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
 
-#dt-search-bar #dt-search-button {
-  width: 10%;
-  background-color: #2196f3;
+#dt-search-bar .dt-form-group button[type="submit"] {
+  background-color: #e91e63;
   color: #fafafa;
-  border: 1px solid #42a5f5;
-  border-radius: 0 3px 3px 0;
+  border-right: 2px solid #2196f3;
+  border-top: 2px solid #2196f3;
+  border-bottom: 2px solid #2196f3;
+  border-left: 0;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  #dt-search-bar #dt-search-button:hover {
-    background-color: #39a1f4;
+  #dt-search-bar .dt-form-group button[type="submit"]:hover {
+    background-color: #ec407a;
     -webkit-transition: 0.2s;
     transition: 0.2s; }
 
@@ -9633,7 +9627,7 @@ button, input, optgroup, select, textarea {
   cursor: pointer;
   height: 100%; }
   .dt-toggler-menu:hover {
-    background-color: #39a1f4;
+    background-color: #42a5f5;
     -webkit-transition: 0.2s;
     transition: 0.2s; }
 
@@ -9720,7 +9714,10 @@ button, input, optgroup, select, textarea {
     border-left: 2px solid #fafafa; }
   #footer .footer-after {
     margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 2px solid #fafafa; }
+    padding-top: 0.5rem;
+    border-top: 2px solid #fafafa;
+    font-size: 1rem; }
+    #footer .footer-after p {
+      margin: 0; }
 
 /*# sourceMappingURL=theme.css.map*/

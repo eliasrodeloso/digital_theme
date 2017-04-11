@@ -1,8 +1,8 @@
 
 
-@mixin hover-color{
+@mixin hover-color($color){
 	&:hover{
-		background-color: lighten($brand-primary, 5%);
+		background-color: $color;
 		transition: 0.2s;
 	}
 }

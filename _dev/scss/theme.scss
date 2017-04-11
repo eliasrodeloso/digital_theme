@@ -40,7 +40,7 @@
   background-color: $brand-primary;
   border: 0;
 	cursor: pointer;
-	@include hover-color;
+	@include hover-color($blue-400);
 	height: 100%;
 
 }
@@ -160,7 +160,12 @@
 
 	.footer-after{
 		margin-top: $spacer;
-		padding-top: $spacer;
+		padding-top: $spacer * .5;
 		border-top: $border-width solid $grey-50;
+		font-size: $font-size-base;
+
+		p{
+			margin: 0;
+		}
 	}
 }

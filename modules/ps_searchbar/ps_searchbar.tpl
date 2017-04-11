@@ -1,13 +1,11 @@
-<div class="hidden-sm-down col-9 py-2 mt-1" id="search_widget" data-search-controller-url="{$search_controller_url}">
-  <div class="dt-width-max m-auto">
-    <form class="form-inline" id="dt-search-bar" method="get" action="{$search_controller_url}">
+<div class="hidden-sm-down col-9 row no-gutters" id="search_widget" data-search-controller-url="{$search_controller_url}">
+  <form class="form-inline col-12 row no-gutters" id="dt-search-bar" method="get" action="{$search_controller_url}">
+    <div class="dt-form-group row col-12 row no-gutters">
       <input type="hidden" name="controller" value="search">
-      <div class="dt-input-group">
-        <input class="dt-form-control" placeholder="Encuentra lo que necesitas" type="text" name="s" value="{$search_string}">
-        <button id="dt-search-button" type="submit" class="justify-content-around">
-          <i class="material-icons md-24">&#xE8B6;</i>
-        </button>
-      </div>
-    </form>
-  </div>
+      <input class="form-control col-10" placeholder="Encuentra lo que necesitas" type="text" name="s" value="{$search_string}">
+      <button id="dt-search-button" type="submit" class="justify-content-around col-2">
+        {l s='Search' d='Modules.EmailSubscription.Shop'}
+      </button>
+    </div>
+  </form>
 </div>
