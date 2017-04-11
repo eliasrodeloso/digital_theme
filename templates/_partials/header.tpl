@@ -35,9 +35,9 @@
             </button>
           </div>
           
-          <div class="col-md-2 col-lg-2">
+          <div class="col-md-2 col-lg-2 d-flex justify-content-around align-items-center">
             {block name='header_logo'}
-              <a class="navbar-brand" href="{$urls.base_url}" title="{$shop.name}">
+              <a href="{$urls.base_url}" title="{$shop.name}">
                 <img src="{$shop.logo}" alt="{$shop.name}">
               </a>
             {/block}

@@ -9,25 +9,25 @@
   
   .dt-form-group{
 
+    border-top: $border-width solid $blue-500;
+    border-left: $border-width solid $blue-500;
+    border-bottom: $border-width solid $blue-500;
+    border-right: $border-width solid $blue-500;
+
+    i{
+      background-color: $grey-50;
+      border-right: $border-width solid $grey-100;
+    }
+
     input[type="text"]{
       padding: 0.5rem 0.75rem;
       font-size: 1rem;
       line-height: 1.25;
       color: $gray-dark;
-      background-color: $white;
+      background-color: $grey-50;
       background-image: none;
       background-clip: padding-box;
-      border-top: $border-width solid $blue-500;
-      border-left: $border-width solid $blue-500;
-      border-bottom: $border-width solid $blue-500;
-      border-right: 0;
-      transition: border-color $transition-fade, box-shadow $transition-fade;
-
-      &:focus{
-        border-color: rgba($brand-primary, 1);
-        background-color: $white;
-        color: $gray-dark;
-      }
+      border: 0;
 
       &::placeholder{
         color: rgba($gray, 0.75);
@@ -36,13 +36,15 @@
       }
     }
 
+    &:focus{
+      border-color: $blue-400;
+      transition: all 0.2s linear;
+    }
+
     button[type="submit"]{
       background-color: $pink-500;
       color: $grey-50;
-      border-right: $border-width solid $blue-500;
-      border-top: $border-width solid $blue-500;
-      border-bottom: $border-width solid $blue-500;
-      border-left: 0;
+      border: 0;
       cursor: pointer;
       display: flex;
       @include hover-color($pink-400);
