@@ -9400,7 +9400,7 @@ button, input, optgroup, select, textarea {
 #carouselHome {
   width: 100%;
   margin-top: 0;
-  padding: 1rem 1rem 0 0; }
+  padding: 1rem 0.5rem 0 0; }
   #carouselHome figure {
     margin: 0; }
   #carouselHome .carousel-caption {
@@ -9428,19 +9428,24 @@ button, input, optgroup, select, textarea {
           animation-delay: 1.5s; }
 
 #blockReassurance .block-text {
-  margin-right: 1rem;
   padding: 1rem;
   font-size: 0.875rem;
   border: 2px #2196f3 solid;
   background-color: #fafafa; }
   #blockReassurance .block-text:nth-child(3) {
     margin-right: 0 !important; }
-  #blockReassurance .block-text:hover {
-    color: #1b5e20;
-    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.25); }
 
-#blockReassurance .side-img {
-  margin-right: 1rem; }
+#blockReassurance .block-1 {
+  color: #4caf50;
+  border-color: #4caf50; }
+
+#blockReassurance .block-2 {
+  color: #ff9800;
+  border-color: #ff9800; }
+
+#blockReassurance .block-3 {
+  color: #f44336;
+  border-color: #f44336; }
 
 .dt-product-miniature:hover {
   border: 1px solid #e91e63;

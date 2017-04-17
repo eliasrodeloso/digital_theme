@@ -2,10 +2,14 @@
 
 #blockReassurance{
 
+	$block-colors: (
+		1: $green-500,
+		2: $orange-500,
+		3: $red-500
+	);
+
 	.block-text{
-		margin-right: $spacer;
 		padding: $spacer;
-		
 		font-size: $font-size-sm;
 		border: $border-width $brand-primary solid;
 		background-color: $gray-lightest;
@@ -13,15 +17,13 @@
 		&:nth-child(3){
 			margin-right: 0 !important;
 		}
+	}
 
-		&:hover{
-			color: $brand-success;
-			box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.25);
+	@each $number, $color in $block-colors{
+		.block-#{$number}{
+			color: #{$color};
+			border-color: #{$color};
 		}
 	}
 
-	.side-img{
-		margin-right: $spacer;
-	}
-	
 }

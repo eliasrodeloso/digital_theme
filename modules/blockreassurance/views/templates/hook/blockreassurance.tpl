@@ -1,17 +1,19 @@
 
 {if $elements}
-  <div id="blockReassurance" class="row no-gutters my-5 align-items-center">
-    {foreach from=$elements item=element}
-      <div class="col-sm-12 col-md-4">
-        <div class="block-text d-flex justify-contet-around align-items-center">
-          <div class="side-img">
-            <img src="{$element.image}" alt="{$element.text|escape:'quotes'}" /> 
+  <section id="blockReassurance" class="my-5">
+    <div class="row justify-content-between">
+      {foreach from=$elements item=element name=reasssuranceFor}
+        <div class="col-sm-12 col-md-4">
+          <div class="block-text block-{$smarty.foreach.reasssuranceFor.iteration} d-flex justify-content-around">
+            <div class="d-flex align-items-center">
+              <span class="mr-3">
+                <img src="{$element.image}" alt="{$element.text|escape:'quotes'}" /> 
+              </span>
+              <h5 class="text-uppercase my-0">{$element.text}</h5>
+            </div>
           </div>
-          <span>{$element.text nofilter}</span>
         </div>
-        
-      </div>
-      
-    {/foreach}
-  </div>
+      {/foreach}
+    </div>
+  </section>
 {/if}
