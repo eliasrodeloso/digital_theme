@@ -28,3 +28,33 @@
 			background-image: url($file-name);
 		}
 }
+
+@mixin hover-banner($class-name){
+	
+	.#{$class-name}{
+
+		a{
+			&::after{
+				background-color: $grey-50;
+				bottom: 0;
+				top: 0;
+				left: 0;
+				right: 0;
+				content: "";
+				position: absolute;
+				transform: scaleY(0);
+				transition: all 0.3s ease-in-out 0s;
+			}
+		}
+
+		&:hover{
+			a{
+				&::after{
+					opacity: 0.3;
+					transform: scaleY(1);
+					visibility: visible;
+				}
+			}
+		}
+	}
+}

@@ -9552,68 +9552,68 @@ button, input, optgroup, select, textarea {
         color: transparent; }
 
 .social-follow .facebook {
-  background-image: url(../css/fonts/7a11b2908a8a7bf396435b17facf9175.svg); }
+  background-image: url(../css/fonts/fa6f11d381379a7fb321475131fbb846.svg); }
   .social-follow .facebook:hover {
-    background-image: url(../css/fonts/a960ec95733ef7da721f12701967dad6.svg); }
+    background-image: url(../css/fonts/d7073a2cb887b36f06cfcd185e70d6c4.svg); }
   .social-follow .facebook::before {
     content: '';
-    background-image: url(../css/fonts/7a11b2908a8a7bf396435b17facf9175.svg); }
+    background-image: url(../css/fonts/fa6f11d381379a7fb321475131fbb846.svg); }
 
 .social-follow .twitter {
-  background-image: url(../css/fonts/b0041b158dec40c11808263f7d6f9d31.svg); }
+  background-image: url(../css/fonts/07452b15a7a765de4c16f6fac3ce7be7.svg); }
   .social-follow .twitter:hover {
-    background-image: url(../css/fonts/356b9ad9d8c88274e3cb93f42eef9887.svg); }
+    background-image: url(../css/fonts/8d41351957dc62b9be0deecae5bb75fd.svg); }
   .social-follow .twitter::before {
     content: '';
-    background-image: url(../css/fonts/b0041b158dec40c11808263f7d6f9d31.svg); }
+    background-image: url(../css/fonts/07452b15a7a765de4c16f6fac3ce7be7.svg); }
 
 .social-follow .rss {
-  background-image: url(../css/fonts/34596e85a0c4a5bf2c4bb75027cc8e49.svg); }
+  background-image: url(../css/fonts/b12eecfd228b91dde57a4b13c81be285.svg); }
   .social-follow .rss:hover {
-    background-image: url(../css/fonts/2c5416baeae7d297d62daa2a5ad25bfd.svg); }
+    background-image: url(../css/fonts/e967c735b76c45adc10a8d5e51992994.svg); }
   .social-follow .rss::before {
     content: '';
-    background-image: url(../css/fonts/34596e85a0c4a5bf2c4bb75027cc8e49.svg); }
+    background-image: url(../css/fonts/b12eecfd228b91dde57a4b13c81be285.svg); }
 
 .social-follow .youtube {
-  background-image: url(../css/fonts/ffa8f54825a9f4f0470efe61d8627bb8.svg); }
+  background-image: url(../css/fonts/e27880862ce71d267ce3ba217d36b146.svg); }
   .social-follow .youtube:hover {
-    background-image: url(../css/fonts/94c10bb66801e30ba3affd9c89a0c1f7.svg); }
+    background-image: url(../css/fonts/d14e779b13801e7fe68e7e69a6cc266a.svg); }
   .social-follow .youtube::before {
     content: '';
-    background-image: url(../css/fonts/ffa8f54825a9f4f0470efe61d8627bb8.svg); }
+    background-image: url(../css/fonts/e27880862ce71d267ce3ba217d36b146.svg); }
 
 .social-follow .googleplus {
-  background-image: url(../css/fonts/54c542f684db6163513d7b90f004bd91.svg); }
+  background-image: url(../css/fonts/e440c85868ac48fd60748cdcdd0dfaaf.svg); }
   .social-follow .googleplus:hover {
-    background-image: url(../css/fonts/de9f784b8997e7393ae3e44121c54b18.svg); }
+    background-image: url(../css/fonts/bfebda86fbd51f3b6fe901e0bf575306.svg); }
   .social-follow .googleplus::before {
     content: '';
-    background-image: url(../css/fonts/54c542f684db6163513d7b90f004bd91.svg); }
+    background-image: url(../css/fonts/e440c85868ac48fd60748cdcdd0dfaaf.svg); }
 
 .social-follow .pinterest {
-  background-image: url(../css/fonts/74cc0cf532900a74cd1ec6f4654a19f5.svg); }
+  background-image: url(../css/fonts/48bf0c0685e88902419f5a4df57903d8.svg); }
   .social-follow .pinterest:hover {
-    background-image: url(../css/fonts/7a6a1ae69d740ec273ad04caa93f611d.svg); }
+    background-image: url(../css/fonts/ea5a5cc7f9235174adc2aed4d2b36c44.svg); }
   .social-follow .pinterest::before {
     content: '';
-    background-image: url(../css/fonts/74cc0cf532900a74cd1ec6f4654a19f5.svg); }
+    background-image: url(../css/fonts/48bf0c0685e88902419f5a4df57903d8.svg); }
 
 .social-follow .vimeo {
-  background-image: url(../css/fonts/d0914b66cac4714a2a629f02279e050e.svg); }
+  background-image: url(../css/fonts/cec007e083a35b064bac727429d5905d.svg); }
   .social-follow .vimeo:hover {
-    background-image: url(../css/fonts/b12ede9dda2b8fdda129301d28d81d42.svg); }
+    background-image: url(../css/fonts/e7ce3bfff79356e6c76eff4b406f6096.svg); }
   .social-follow .vimeo::before {
     content: '';
-    background-image: url(../css/fonts/d0914b66cac4714a2a629f02279e050e.svg); }
+    background-image: url(../css/fonts/cec007e083a35b064bac727429d5905d.svg); }
 
 .social-follow .instagram {
-  background-image: url(../css/fonts/904eb9ea32d93055eeab52e814e5438c.svg); }
+  background-image: url(../css/fonts/b13a43af65532287d304863843aed03d.svg); }
   .social-follow .instagram:hover {
-    background-image: url(../css/fonts/3c5460d313e9e19fb243455b79502f58.svg); }
+    background-image: url(../css/fonts/0e2e936a9bcc2b4cfbadc77c47ea21e3.svg); }
   .social-follow .instagram::before {
     content: '';
-    background-image: url(../css/fonts/904eb9ea32d93055eeab52e814e5438c.svg); }
+    background-image: url(../css/fonts/b13a43af65532287d304863843aed03d.svg); }
 
 #main-menu {
   display: none;
@@ -9623,6 +9623,29 @@ button, input, optgroup, select, textarea {
   position: absolute;
   top: 50px;
   left: 50px; }
+
+/*
+*	Styles for all template files of wtcustomhtml module
+*
+*/
+.custom-html .banner a::after {
+  background-color: #fafafa;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  position: absolute;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s; }
+
+.custom-html .banner:hover a::after {
+  opacity: 0.3;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  visibility: visible; }
 
 #header .before-nav {
   background-color: #fafafa;
@@ -9752,5 +9775,3 @@ button, input, optgroup, select, textarea {
     font-size: 1rem; }
     #footer .footer-after p {
       margin: 0; }
-
-/*# sourceMappingURL=theme.css.map*/
