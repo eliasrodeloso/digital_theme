@@ -8,14 +8,16 @@
       {hook h='displayTopHome'}
     </div>
 
-    {*
-    {block name='hook_reassurance'}
-      {hook h='displayReassurance'}
-    {/block}*}
 
     <div id="displayCenterHome">
       {hook h='displayCenterHome'}
     </div>
+
+    
+    <div id="displayBottomHome">
+      {hook h='displayBottomHome'}
+    </div>
+
 
     {* In case you want to use the 'displayHome' hook, you should uncomment the next line *}
     {* {$HOOK_HOME nofilter} *}

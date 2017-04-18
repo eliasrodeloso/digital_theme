@@ -9694,8 +9694,7 @@ button, input, optgroup, select, textarea {
     transition: 0.2s; }
 
 #customText {
-  padding: 1rem;
-  margin: 2rem 0; }
+  margin: 1rem 0; }
 
 #featuredProducts h2 {
   line-height: 1.33333;
