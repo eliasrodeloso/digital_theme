@@ -64,15 +64,40 @@
       {/block}
 
       {block name='product_list_actions'}
-        <div class="product-list-actions">
-          <form action="{$urls.pages.cart}" method="post" class="d-flex justify-content-center" >
-            <input type="hidden" value="{$product.id_product}" name="id_product">
-            <input type="number" hidden name="qty" value="1" min="1">
-            <button data-button-action="add-to-cart" class="btn btn-sm btn-outline-primary d-flex align-items-center">
-              <i class="material-icons mr-2 md-22">add_shopping_cart</i>
-              <span>{l s='Add to cart' d='Shop.Theme.Actions'}</span> 
-            </button>
-          </form>
+        <div class="product-actions">
+          {block name='product_buy'}
+            <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh">
+              <input type="hidden" name="token" value="{$static_token}">
+              <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
+
+              <div class="product-add-to-cart d-flex justify-content-around">
+                {if !$configuration.is_catalog}
+
+                  <input
+                    type="hidden"
+                    name="qty"
+                    id="quantity_wanted"
+                    value="1"
+                    class="input-group product-quantity"
+                    min="{$product.minimal_quantity}"
+                  >
+
+                  <button class="btn btn-sm btn-outline-primary d-flex align-items-center add-to-cart" type="submit" name="add" data-button-action="add-to-cart">
+                    <span class="mr-2">
+                      <i class="material-icons md-18">add_shopping_cart</i>
+                    </span>
+                    {l s='Add to cart' d='Shop.Theme.Actions'}
+                  </button>
+
+                {/if}
+              </div>
+
+              {block name='product_refresh'}
+                <input class="product-refresh ps-hidden-by-js" name="refresh" type="submit" value="{l s='Refresh' d='Shop.Theme.Actions'}">
+              {/block}
+            </form>
+          {/block}
+
         </div>
       {/block}
 

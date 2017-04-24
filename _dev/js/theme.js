@@ -10,13 +10,16 @@
  * @copyright 2017 Elias Rodelo
  */
 
-import $ from 'jquery';
-import tether from 'expose-loader?Tether!tether';
+import $ from 'expose-loader?$!expose-loader?jQuery!jquery';
+import 'expose-loader?Tether!tether';
 import 'bootstrap';
+import 'owl.carousel';
 
 import './components/dropdowns';
 import './components/slider';
 import './components/newsletter';
+import './components/owl';
+import './components/block-cart';
 
 import prestashop from 'prestashop';
 import EventEmitter from 'events';

@@ -3,7 +3,8 @@
 {block name='page_content'}
   {block name='hook_home'}
   
-    {* These lines are the default homepage, feel free to modify if you want to show other stuff *}
+    {* These lines are the default homepage theme, feel free to modify if you want to show other stuff *}
+
     <div id="hookDisplayTopHome" class="row no-gutters">
       {hook h='displayTopHome'}
     </div>
