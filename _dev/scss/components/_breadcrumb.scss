@@ -1,3 +1,31 @@
 .dt-breadcrumb{
+	margin-top: $spacer;
+	padding: $spacer 0;
+	list-style: none;
+	margin-bottom: 0;
 	
+	.breadcrumb-home{
+		float: left;
+
+		a{
+			border-top: 1px solid $gray;
+			border-bottom: 1px solid $gray;
+			border-left: 1px solid $gray;
+			padding: 0 $spacer;
+
+			&:hover{
+				text-decoration: none;
+			}
+		}
+
+		&::after{
+			display: inline-block; // Suppress underlining of the separator in modern browsers
+			border-top: $breadcrumb-padding-x solid transparent;
+			border-bottom: $breadcrumb-padding-x solid transparent;
+			border-left: $breadcrumb-padding-x solid $gray;
+			width: 0;
+			height: 0;
+			content: "";
+		}
+	}
 }

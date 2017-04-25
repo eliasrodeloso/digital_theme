@@ -3556,7 +3556,7 @@ tbody.collapse.show {
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: #eceeef;
+  background-color: #eeeeee;
   border-radius: 0; }
   .breadcrumb::after {
     display: block;
@@ -3569,14 +3569,14 @@ tbody.collapse.show {
     display: inline-block;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-    color: #636c72;
+    color: #bdbdbd;
     content: "/"; }
   .breadcrumb-item + .breadcrumb-item:hover::before {
     text-decoration: underline; }
   .breadcrumb-item + .breadcrumb-item:hover::before {
     text-decoration: none; }
   .breadcrumb-item.active {
-    color: #636c72; }
+    color: #bdbdbd; }
 
 .pagination {
   display: -webkit-box;
@@ -9572,6 +9572,29 @@ button, input, optgroup, select, textarea {
     font-size: 1rem; }
     #footer .footer-after p {
       margin: 0; }
+
+.dt-breadcrumb {
+  margin-top: 1rem;
+  padding: 1rem 0;
+  list-style: none;
+  margin-bottom: 0; }
+  .dt-breadcrumb .breadcrumb-home {
+    float: left; }
+    .dt-breadcrumb .breadcrumb-home a {
+      border-top: 1px solid #757575;
+      border-bottom: 1px solid #757575;
+      border-left: 1px solid #757575;
+      padding: 0 1rem; }
+      .dt-breadcrumb .breadcrumb-home a:hover {
+        text-decoration: none; }
+    .dt-breadcrumb .breadcrumb-home::after {
+      display: inline-block;
+      border-top: 1rem solid transparent;
+      border-bottom: 1rem solid transparent;
+      border-left: 1rem solid #757575;
+      width: 0;
+      height: 0;
+      content: ""; }
 
 /**
 
