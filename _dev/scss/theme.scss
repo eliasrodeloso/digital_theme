@@ -1,197 +1,43 @@
+// Vendor
 @import '_fonts';
 @import '~bootstrap/scss/bootstrap';
 @import '~animate.css/animate';
 @import '~owl.carousel/src/scss/owl.carousel';
+
+// Partials
 @import '_md-colors';
 @import '_mixins';
 @import '_utilities';
-@import 'components/searchbar';
-@import 'components/shoppingcart';
-@import 'components/customeraccount';
-@import 'components/slider';
-@import 'components/blockreassurance';
+
+// Theme components
 @import 'components/product-miniture';
-@import 'components/socialfollow';
-@import 'components/mainmenu';
-@import 'components/customhtml';
-@import 'components/dtbrands';
-
-#header{
-
-	.before-nav{
-		background-color: $grey-50;
-		border-bottom: $border-width/2 solid $grey-500;
-
-		.btn-secondary{
-			color: $blue-500;
-			background-color: transparent;
-			border: 0;
-			border-right: $border-width/2 solid $grey-500;
-			border-left: $border-width/2 solid $grey-500;
-
-			&:hover{
-				color: $blue-400;
-				text-decoration: transparent;
-				transition: all 0.2s ease-in-out;
-			}
-
-		}
-
-		.dropdown-menu{
-			animation-duration: 0.3s;
-		}
-
-		#dropdownCurrency{
-			border-left: 0;
-		}
-	}
-	
-	.dt-btn-dropdown-header{
-
-		&::after{
-			display: none;
-			content: "";
-		}
-
-		color: $gray-dark;
-		border-radius: 0;
-		background-color: transparent;
-
-		&:hover{
-			color: $brand-primary;
-			background-color: $gray-lightest;
-		}
-	}
-
-	.dt-navbar{
-		background-color: $gray-lightest;
-		box-shadow: 0px 1px 2px 0px rgba(0,0,0, 0.25);
-	}
-
-	.dt-toggler-menu{
-		color: $gray-lightest;
-		background-color: $brand-primary;
-		border: 0;
-		cursor: pointer;
-		@include hover-color($blue-400);
-		height: 100%;
-
-	}
-}
+@import 'components/header';
+@import 'components/footer';
+@import 'components/breadcrumb';
 
 
-#customText{
-	margin: $spacer 0;
-}
+// Theme modules
+@import 'modules/searchbar';
+@import 'modules/shoppingcart';
+@import 'modules/customeraccount';
+@import 'modules/slider';
+@import 'modules/blockreassurance';
+@import 'modules/socialfollow';
+@import 'modules/mainmenu';
+@import 'modules/customhtml';
+@import 'modules/dtbrands';
+@import 'modules/featuredproducts';
+@import 'modules/mainmenu';
+@import 'modules/customtext';
+@import 'modules/emailsubscription';
 
-#featuredProducts{
-	h2{
-		line-height: $line-height-lg;
-		border-bottom: 2px solid $pink;
-		margin-bottom: $spacer*2;
-		padding: 0 1rem;
-	}
-}
 
-#emailFooterSuscription{
-	background-color: $blue-500;
 
-	.dt-email{
-		padding: $spacer*2 0;
 
-		form{
 
-			.dt-form-group{
-				display: flex;
-				flex-direction: row;
-				max-width: 80%;
-				flex: 1 100%;
-				
-				input{
-					padding: $spacer/2 0.75rem;
-					font-size: $font-size-base;
-					line-height: $line-height-base;
-					color: $gray;
-					background-color: $gray-lightest;
-					background-clip: padding-box;
-					border-right: none;
-					border-top: $border-width solid rgba(0,0,0, 0.25);
-					border-bottom: $border-width solid rgba(0,0,0, 0.25);
-					border-left: $border-width solid rgba(0,0,0, 0.25);
-					transition: $input-transition;
-					
-					&[type="submit"]{
-						border-left: none;
-						border-right: $border-width solid rgba(0,0,0, 0.25);
-						background-color: $pink-500;
-						color: $gray-lightest;
-						text-transform: uppercase;
 
-						&:hover{
-							background-color: $pink-400;
-							transition: all 0.3s ease-in-out;
-						}
-					}
-				}
 
-			}
 
-			span{
-				color: $grey-50;
-				font-size: $font-size-sm;
 
-				&::before{
-					content: "*";
-					margin-right: $spacer/2;
-				}
-			}
-			
-		}
 
-		h5{
-			display: inline;
-			margin: 0;
-			color: $gray-lightest;
-		}
-	}
 
-	
-}
-
-#footer{
-	background-color: $blue-600;
-	color: $grey-50;
-	padding: $spacer 0;
-
-	ul{
-		padding: 0;
-		margin: 0;
-
-		li{
-			list-style: none;
-		}
-	}
-
-	a{
-		color: $grey-50;
-
-		&:hover{
-			color: $grey-100
-		}
-	}
-
-	.footer-right{
-		border-left: $border-width solid $grey-50;
-	}
-
-	.footer-after{
-		margin-top: $spacer;
-		padding-top: $spacer * .5;
-		border-top: $border-width solid $grey-50;
-		font-size: $font-size-base;
-
-		p{
-			margin: 0;
-		}
-	}
-}

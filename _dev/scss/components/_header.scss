@@ -1,0 +1,63 @@
+
+#header{
+
+	.before-nav{
+		background-color: $grey-50;
+		border-bottom: $border-width/2 solid $grey-500;
+
+		.btn-secondary{
+			color: $blue-500;
+			background-color: transparent;
+			border: 0;
+			border-right: $border-width/2 solid $grey-500;
+			border-left: $border-width/2 solid $grey-500;
+
+			&:hover{
+				color: $blue-400;
+				text-decoration: transparent;
+				transition: all 0.2s ease-in-out;
+			}
+
+		}
+
+		.dropdown-menu{
+			animation-duration: 0.3s;
+		}
+
+		#dropdownCurrency{
+			border-left: 0;
+		}
+	}
+	
+	.dt-btn-dropdown-header{
+
+		&::after{
+			display: none;
+			content: "";
+		}
+
+		color: $gray-dark;
+		border-radius: 0;
+		background-color: transparent;
+
+		&:hover{
+			color: $brand-primary;
+			background-color: $gray-lightest;
+		}
+	}
+
+	.dt-navbar{
+		background-color: $gray-lightest;
+		box-shadow: 0px 1px 2px 0px rgba(0,0,0, 0.25);
+	}
+
+	.dt-toggler-menu{
+		color: $gray-lightest;
+		background-color: $brand-primary;
+		border: 0;
+		cursor: pointer;
+		@include hover-color($blue-400);
+		height: 100%;
+
+	}
+}
