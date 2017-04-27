@@ -1,31 +1,44 @@
-.dt-breadcrumb{
+.breadcrumb{
 	margin-top: $spacer;
-	padding: $spacer 0;
+	padding: $spacer 0 $spacer/2 0;
 	list-style: none;
-	margin-bottom: 0;
-	
-	.breadcrumb-home{
+	margin-bottom: $spacer-y;
+	border-bottom: $border-width solid $gray-light;
+
+	@include clearfix;
+
+	.breadcrumb-item{
 		float: left;
 
-		a{
-			border-top: 1px solid $gray;
-			border-bottom: 1px solid $gray;
-			border-left: 1px solid $gray;
-			padding: 0 $spacer;
+		+ .breadcrumb-item::before{
+			font-family: 'Material Icons';
+			font-weight: normal;
+			font-style: normal;
+			font-size: 24px;
+			display: inline-block;
+			line-height: 1;
+			text-transform: none;
+			letter-spacing: normal;
+			word-wrap: normal;
+			white-space: nowrap;
+			direction: ltr;
+			-webkit-font-smoothing: antialiased;
+			text-rendering: optimizeLegibility;
+			-moz-osx-font-smoothing: grayscale;
+			font-feature-settings: 'liga';
+			content: "keyboard_arrow_right";
 
-			&:hover{
+			+ .breadcrumb-item:hover::before {
+				text-decoration: underline;
+			}
+			+ .breadcrumb-item:hover::before {
 				text-decoration: none;
 			}
-		}
 
-		&::after{
-			display: inline-block; // Suppress underlining of the separator in modern browsers
-			border-top: $breadcrumb-padding-x solid transparent;
-			border-bottom: $breadcrumb-padding-x solid transparent;
-			border-left: $breadcrumb-padding-x solid $gray;
-			width: 0;
-			height: 0;
-			content: "";
+			&.active {
+				color: $breadcrumb-active-color;
+			}
 		}
 	}
+
 }

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --progress -p",
-    "watch": "webpack --progress --colors --watch",
+    "watch": "webpack --progress --colors --watch --debug --devtool source-map",
     "debug": "webpack --progress --colors --debug --devtool source-map --output-pathinfo --display-chunks --watch"
   },
   "author": "Elias Rodelo",

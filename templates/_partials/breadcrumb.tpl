@@ -4,11 +4,11 @@
     class="d-none"
   {/if}
 >
-  <ol class="breadcrumb dt-breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+  <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
     {foreach from=$breadcrumb.links item=path name=breadcrumb}
       {block name='breadcrumb_item'}
         {if $smarty.foreach.breadcrumb.first}
-          <li class="breadcrumb-home d-flex justify-content-around">
+          <li class="breadcrumb-item d-flex justify-content-around">
             <a itemprop="item" href="{$path.url}" class="d-flex align-items-center">
               <span itemprop="name" class="d-none">{$path.title}</span>
               <i class="material-icons">home</i>
@@ -16,14 +16,13 @@
             </a>
           </li>
         {else}
-          <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <li class="breadcrumb-item d-flex justify-content-around" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
             <a itemprop="item" href="{$path.url}">
               <span itemprop="name">{$path.title}</span>
             </a>
             <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
-          </li>          
+          </li>
         {/if}
-        
         
       {/block}
     {/foreach}

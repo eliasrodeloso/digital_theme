@@ -68,11 +68,6 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/* unknown exports provided */
-/* all exports used */
-/*!***********************************!*\
-  !*** (webpack)/buildin/global.js ***!
-  \***********************************/
 /***/ (function(module, exports) {
 
 var g;
@@ -100,22 +95,12 @@ module.exports = g;
 
 /***/ }),
 /* 1 */
-/* unknown exports provided */
-/* exports used: default */
-/*!*****************************!*\
-  !*** external "prestashop" ***!
-  \*****************************/
 /***/ (function(module, exports) {
 
 module.exports = prestashop;
 
 /***/ }),
 /* 2 */
-/* unknown exports provided */
-/* all exports used */
-/*!*********************************!*\
-  !*** ./~/jquery/dist/jquery.js ***!
-  \*********************************/
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10343,16 +10328,12 @@ return jQuery;
 
 /***/ }),
 /* 3 */
-/* unknown exports provided */
-/*!*************************************!*\
-  !*** ./js/components/block-cart.js ***!
-  \*************************************/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prestashop__ = __webpack_require__(/*! prestashop */ 1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prestashop__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prestashop___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_prestashop__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(/*! jquery */ 2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery__);
 /**
  * 2007-2016 PrestaShop
@@ -10407,10 +10388,6 @@ __WEBPACK_IMPORTED_MODULE_0_prestashop___default.a.blockcart.showModal = (html) 
 
 /***/ }),
 /* 4 */
-/* unknown exports provided */
-/*!************************************!*\
-  !*** ./js/components/dropdowns.js ***!
-  \************************************/
 /***/ (function(module, exports) {
 
 
@@ -10446,20 +10423,12 @@ $('#dropdownCustomer').on('hidden.bs.dropdown', function () {
 
 /***/ }),
 /* 5 */
-/* unknown exports provided */
-/*!*************************************!*\
-  !*** ./js/components/newsletter.js ***!
-  \*************************************/
 /***/ (function(module, exports) {
 
 
 
 /***/ }),
 /* 6 */
-/* unknown exports provided */
-/*!******************************!*\
-  !*** ./js/components/owl.js ***!
-  \******************************/
 /***/ (function(module, exports) {
 
 
@@ -10483,10 +10452,6 @@ $('.owl-carousel').owlCarousel({
 
 /***/ }),
 /* 7 */
-/* unknown exports provided */
-/*!*********************************!*\
-  !*** ./js/components/slider.js ***!
-  \*********************************/
 /***/ (function(module, exports) {
 
 
@@ -10542,10 +10507,6 @@ $().ready( function () {
 
 /***/ }),
 /* 8 */
-/* unknown exports provided */
-/*!******************************************!*\
-  !*** ./~/bootstrap/dist/js/bootstrap.js ***!
-  \******************************************/
 /***/ (function(module, exports) {
 
 /*!
@@ -14087,11 +14048,6 @@ var Popover = function ($) {
 
 /***/ }),
 /* 9 */
-/* unknown exports provided */
-/* exports used: default */
-/*!****************************!*\
-  !*** ./~/events/events.js ***!
-  \****************************/
 /***/ (function(module, exports) {
 
 // Copyright Joyent, Inc. and other Node contributors.
@@ -14400,32 +14356,20 @@ function isUndefined(arg) {
 
 /***/ }),
 /* 10 */
-/* unknown exports provided */
-/*!******************************************************************************!*\
-  !*** ./~/expose-loader?$!./~/expose-loader?jQuery!./~/jquery/dist/jquery.js ***!
-  \******************************************************************************/
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["$"] = __webpack_require__(/*! -!./~/expose-loader?jQuery!./jquery.js */ 13);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../webpack/buildin/global.js */ 0)))
+/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["$"] = __webpack_require__(13);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 11 */
-/* unknown exports provided */
-/*!*************************************************************!*\
-  !*** ./~/expose-loader?Tether!./~/tether/dist/js/tether.js ***!
-  \*************************************************************/
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["Tether"] = __webpack_require__(/*! -!./tether.js */ 14);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ 0)))
+/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["Tether"] = __webpack_require__(14);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 12 */
-/* unknown exports provided */
-/*!*********************************************!*\
-  !*** ./~/owl.carousel/dist/owl.carousel.js ***!
-  \*********************************************/
 /***/ (function(module, exports) {
 
 /**
@@ -17705,23 +17649,13 @@ function isUndefined(arg) {
 
 /***/ }),
 /* 13 */
-/* unknown exports provided */
-/* all exports used */
-/*!**********************************************************!*\
-  !*** ./~/expose-loader?jQuery!./~/jquery/dist/jquery.js ***!
-  \**********************************************************/
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["jQuery"] = __webpack_require__(/*! -!./jquery.js */ 2);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../webpack/buildin/global.js */ 0)))
+/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["jQuery"] = __webpack_require__(2);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 14 */
-/* unknown exports provided */
-/* all exports used */
-/*!************************************!*\
-  !*** ./~/tether/dist/js/tether.js ***!
-  \************************************/
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! tether 1.4.0 */
@@ -19543,35 +19477,30 @@ return Tether;
 
 /***/ }),
 /* 15 */
-/* unknown exports provided */
-/* all exports used */
-/*!*********************!*\
-  !*** ./js/theme.js ***!
-  \*********************/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_expose_loader_expose_loader_jQuery_jquery__ = __webpack_require__(/*! expose-loader?$!expose-loader?jQuery!jquery */ 10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_expose_loader_expose_loader_jQuery_jquery__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_expose_loader_expose_loader_jQuery_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_expose_loader_expose_loader_jQuery_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_expose_loader_Tether_tether__ = __webpack_require__(/*! expose-loader?Tether!tether */ 11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_expose_loader_Tether_tether__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_expose_loader_Tether_tether___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_expose_loader_Tether_tether__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap__ = __webpack_require__(/*! bootstrap */ 8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_bootstrap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_owl_carousel__ = __webpack_require__(/*! owl.carousel */ 12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_owl_carousel__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_owl_carousel___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_owl_carousel__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_dropdowns__ = __webpack_require__(/*! ./components/dropdowns */ 4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_dropdowns__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_dropdowns___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_dropdowns__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_slider__ = __webpack_require__(/*! ./components/slider */ 7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_slider__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_slider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_slider__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_newsletter__ = __webpack_require__(/*! ./components/newsletter */ 5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_newsletter__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_newsletter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_newsletter__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_owl__ = __webpack_require__(/*! ./components/owl */ 6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_owl__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_owl___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_owl__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_block_cart__ = __webpack_require__(/*! ./components/block-cart */ 3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_prestashop__ = __webpack_require__(/*! prestashop */ 1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_block_cart__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_prestashop__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_prestashop___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_prestashop__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_events__ = __webpack_require__(/*! events */ 9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_events__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_events___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_events__);
 /**
  * 
