@@ -14,6 +14,7 @@ import $ from 'expose-loader?$!expose-loader?jQuery!jquery';
 import 'expose-loader?Tether!tether';
 import 'bootstrap';
 import 'owl.carousel';
+import 'fancybox';
 
 import './components/dropdowns';
 import './components/slider';

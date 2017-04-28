@@ -59,8 +59,27 @@ module.exports = [{
             fallback: 'style-loader',
         })
       }, {
-        test: /.(png|woff(2)?|eot|ttf|svg)(\?[a-z0-9=\.]+)?$/,
+        test: /.(woff(2)?|eot|ttf)(\?[a-z0-9=\.]+)?$/,
         use: 'file-loader?name=../css/fonts/[hash].[ext]'
+      }, {
+        test: /.(png|gif|svg|jpe?g)$/,
+        use: [{
+          loader: 'file-loader', options:  {
+            name: '../img/[hash].[ext]',
+            loader: 'image-webpack-loader',
+            options: {
+              progressive: true,
+              optimizationLevel: 6,
+              pngquant: {
+                quality: '65-90',
+                speed: 4
+              },
+              gifsicle: {
+                interlaced: false
+              }
+            }
+          }
+        }]
       }
     ]
   },
