@@ -2,8 +2,7 @@
 	margin-top: $spacer;
 	padding: $spacer 0 $spacer/2 0;
 	list-style: none;
-	margin-bottom: $spacer-y;
-	border-bottom: $border-width solid $gray-light;
+	margin-bottom: 0;
 
 	@include clearfix;
 

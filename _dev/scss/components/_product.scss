@@ -1,0 +1,21 @@
+
+#product-page{
+	background-color: $gray-lightest;
+	padding: $spacer $spacer;
+	border: $border-width solid $gray-light;
+	margin-bottom: $spacer;
+
+	.product-subtitle{
+		border-bottom: $border-width solid $brand-primary;
+		margin-bottom: $spacer;
+
+		.product-meta{
+			display: inline-block;
+
+			+ .product-meta::before{
+				content: "|";
+				margin: 0 $spacer;
+			}
+		}
+	}
+}
