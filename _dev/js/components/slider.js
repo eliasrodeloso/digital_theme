@@ -26,20 +26,22 @@ function doAnimations($elems) {
 }
 
 $().ready( function () {
-	addTheAttr('animated fadeIn');
-	addTheClass('dt-delay-2');
+	if( $('.page-index') ){
+		addTheAttr('animated fadeIn');
+		addTheClass('dt-delay-2');
 
-	$theCarousel = $('#carouselHome');
-	$theCarousel.carousel();
+		$theCarousel = $('#carouselHome');
+		$theCarousel.carousel();
 
-	$firstAnimate = $theCarousel.find('.carousel-caption:first').find('[data-animation ^= "animated"]');
+		$firstAnimate = $theCarousel.find('.carousel-caption:first').find('[data-animation ^= "animated"]');
 
-	doAnimations($firstAnimate);
+		doAnimations($firstAnimate);
 
-	$theCarousel.on('slide.bs.carousel', function (e){
-		$animateElems = $(e.relatedTarget).find('[data-animation ^= "animated"]');
-		doAnimations($animateElems);
-	});
+		$theCarousel.on('slide.bs.carousel', function (e){
+			$animateElems = $(e.relatedTarget).find('[data-animation ^= "animated"]');
+			doAnimations($animateElems);
+		});
+	}
 });
 
 

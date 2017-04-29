@@ -3,7 +3,7 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~animate.css/animate';
 @import '~owl.carousel/src/scss/owl.carousel';
-@import '~fancybox/dist/scss/jquery.fancybox';
+@import '../vendor/fancybox/dist/jquery.fancybox';
 
 // Partials
 @import '_md-colors';
@@ -16,6 +16,7 @@
 @import 'components/footer';
 @import 'components/breadcrumb';
 @import 'components/product';
+//@import 'components/fancybox';
 
 
 // Theme modules
@@ -32,9 +33,6 @@
 @import 'modules/mainmenu';
 @import 'modules/customtext';
 @import 'modules/emailsubscription';
-
-
-
 
 
 

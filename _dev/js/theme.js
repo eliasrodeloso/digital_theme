@@ -14,13 +14,14 @@ import $ from 'expose-loader?$!expose-loader?jQuery!jquery';
 import 'expose-loader?Tether!tether';
 import 'bootstrap';
 import 'owl.carousel';
-import 'fancybox';
+import '../vendor/fancybox/dist/jquery.fancybox';
 
 import './components/dropdowns';
 import './components/slider';
 import './components/newsletter';
 import './components/owl';
 import './components/block-cart';
+import './components/gallery';
 
 import prestashop from 'prestashop';
 import EventEmitter from 'events';

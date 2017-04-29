@@ -15,7 +15,40 @@
 			+ .product-meta::before{
 				content: "|";
 				margin: 0 $spacer;
+
 			}
+		}
+	}
+
+	.product-cover{
+		border: $border-width solid $gray-light;
+	}
+
+	.owl-carousel{
+		margin-top: $spacer/2;
+
+		.owl-nav{
+			font-size: 0;
+
+			.owl-prev{
+				position: absolute;
+				top: 40px;
+				background-color: $brand-primary;
+				color: $gray-light;
+				left: -10px;
+			}
+
+			.owl-next{
+				position: absolute;
+				top: 40px;
+				background-color: $brand-primary;
+				color: $gray-light;
+				right: -10px;
+			}
+		}
+				
+		.item{
+			border: $border-width solid $gray-light;
 		}
 	}
 }

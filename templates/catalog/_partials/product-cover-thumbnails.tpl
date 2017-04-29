@@ -1,15 +1,21 @@
 <div class="images-container">
   {block name='product_cover'}
     <div class="product-cover">
-      <img src="{$product.cover.bySize.medium_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" width="{$product.cover.bySize.medium_default.width}" itemprop="image">
+      <a href="{$product.cover.bySize.large_default.url}" data-fancybox="gallery" data-caption="{$product.cover.legend}">
+          <img class="img-fluid" src="{$product.cover.bySize.medium_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" itemprop="image">    
+      </a>
     </div>
   {/block}
 
   {block name='product_images'}
-    <ul class="product-images">
+    <div class="owl-carousel">
       {foreach from=$product.images item=image}
-        <li><img src="{$image.medium.url}" alt="{$image.legend}" title="{$image.legend}" width="100" itemprop="image"></li>
+        <div class="item">
+          <a href="{$image.large.url}" data-fancybox="gallery" data-caption="{$image.legend}">
+            <img src="{$image.small.url}" alt="{$image.legend}" title="{$image.legend}" itemprop="image">
+          </a>
+        </div>
       {/foreach}
-    </ul>
+    </div>
   {/block}
 </div>
