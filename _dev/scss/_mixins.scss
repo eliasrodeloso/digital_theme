@@ -58,3 +58,62 @@
 		}
 	}
 }
+
+@mixin flag-on-sale{
+	width: 100%;
+	background-color: $blue;
+	position: absolute;
+	top: 0;
+	left: 0;
+	@include box-shadow-1;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0.1rem 0;
+	color: $gray-lightest;
+	border-top-left-radius: 0.25rem;
+	border-top-right-radius: 0.25rem;
+}
+
+@mixin flag-new{
+	position: absolute;
+	top: 30px;
+	left: -5px;
+	color: $gray-lightest;
+	background-color: $orange;
+	padding: 0.1rem 0.2rem;
+	@include box-shadow-1;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+@mixin flag-online-only{
+	position: absolute;
+	bottom: 130px;
+	right: -5px;
+	color: $gray-lightest;
+	background-color: $orange;
+	padding: 0.1rem 0.2rem;
+	@include box-shadow-1;
+	text-align: center;
+	text-transform: uppercase;
+
+	&::before{
+		font-family: 'Material Icons';
+		font-weight: normal;
+		font-style: normal;
+		font-size: $font-size-sm;  /* Preferred icon size */
+		display: inline-block;
+		line-height: 1;
+		text-transform: none;
+		letter-spacing: normal;
+		word-wrap: normal;
+		white-space: nowrap;
+		direction: ltr;
+		-webkit-font-smoothing: antialiased;
+		text-rendering: optimizeLegibility;
+		-moz-osx-font-smoothing: grayscale;
+		font-feature-settings: 'liga';
+		content: "laptop";
+		margin: 0 $spacer/2;
+	}
+}

@@ -80,22 +80,22 @@
         </header>
       {/block}
       
-      <section class="row">
+      <section class="row no-gutters">
         <div class="col-sm-12 col-md-4">
           {block name='product_cover_tumbnails'}
             {include file='catalog/_partials/product-cover-thumbnails.tpl'}
           {/block}
           {block name='product_flags'}
-            <ul class="product-flags">
+            <div class="product-flags">
               {foreach from=$product.flags item=flag}
-                <li>{$flag.label}</li>
+                <span class="{$flag.type}">{$flag.label}</span>
               {/foreach}
-            </ul>
+            </div>
           {/block}
         </div>
         
 
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-4 px-3">
           {block name='product_description_short'}
             <div id="product-description-short" itemprop="description">{$product.description_short nofilter}</div>
           {/block}

@@ -10238,6 +10238,59 @@ button, input, optgroup, select, textarea {
         right: -10px; }
     #product-page .owl-carousel .item {
       border: 2px solid #dcdcdc; }
+  #product-page .product-flags .new {
+    position: absolute;
+    top: 30px;
+    left: -5px;
+    color: #fafafa;
+    background-color: #ff9800;
+    padding: 0.1rem 0.2rem;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.375);
+    text-align: center;
+    text-transform: uppercase; }
+  #product-page .product-flags .on-sale {
+    width: 100%;
+    background-color: #2196f3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.375);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.1rem 0;
+    color: #fafafa;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem; }
+  #product-page .product-flags .online-only {
+    position: absolute;
+    bottom: 130px;
+    right: -5px;
+    color: #fafafa;
+    background-color: #ff9800;
+    padding: 0.1rem 0.2rem;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.375);
+    text-align: center;
+    text-transform: uppercase; }
+    #product-page .product-flags .online-only::before {
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 0.75rem;
+      /* Preferred icon size */
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-feature-settings: 'liga';
+              font-feature-settings: 'liga';
+      content: "laptop";
+      margin: 0 0.5rem; }
 
 /**
 

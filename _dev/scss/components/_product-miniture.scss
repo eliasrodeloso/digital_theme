@@ -61,30 +61,11 @@
 
 .dt-product-flags{
 	.on-sale{
-		width: 100%;
-		background-color: $blue;
-		position: absolute;
-		top: 0;
-		left: 0;
-		@include box-shadow-1;
-		text-align: center;
-		text-transform: uppercase;
-		padding: 0.1rem 0;
-		color: $gray-lightest;
-		border-top-left-radius: 0.25rem;
-		border-top-right-radius: 0.25rem;
+		@include flag-on-sale;
 	}
 
 	.new{
-		position: absolute;
-		top: 30px;
-		left: -5px;
-		color: $gray-lightest;
-		background-color: $orange;
-		padding: 0.1rem 0.2rem;
-		@include box-shadow-1;
-		text-align: center;
-		text-transform: uppercase;
+		@include flag-new;
 	}
 
 	.discount{

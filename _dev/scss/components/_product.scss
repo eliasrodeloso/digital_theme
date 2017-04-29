@@ -51,4 +51,18 @@
 			border: $border-width solid $gray-light;
 		}
 	}
+
+	.product-flags{
+		.new{
+			@include flag-new;
+		}
+
+		.on-sale{
+			@include flag-on-sale;
+		}
+
+		.online-only {
+			@include flag-online-only;
+		}
+	}
 }
