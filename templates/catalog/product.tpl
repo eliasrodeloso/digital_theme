@@ -67,14 +67,25 @@
               {/if}
             {/block}
 
+            {block name='product_quantities'}
+              {if $product.show_quantities}
+                <div id="product-quantities" class="product-meta">
+                  <label class="font-weight-bold">{l s="There are: " d="Shop.Theme.Catalog"}</label>
+                  {$product.quantity} {$product.quantity_label}
+                </div>
+              {/if}
+            {/block}
+
             {block name='product_brand'}
               <div class="product-meta">
                 <label for="productBrand" class="font-weight-bold">
-                  {l s='Brand:' d='Shop.Theme.Catalog'}
+                  {l s='Brand ' d='Shop.Theme.Catalog'}
                 </label>
-                <span itemprop="brand" id="productBrand">(TODO)</span>
+                <a itemprop="brand" href="{$product_brand_url}">{$product_manufacturer->name}</a> 
               </div>
             {/block}
+
+            
             
           </div>
         </header>
@@ -96,11 +107,10 @@
         
 
         <div class="col-sm-12 col-md-4 px-3">
+
           {block name='product_description_short'}
             <div id="product-description-short" itemprop="description">{$product.description_short nofilter}</div>
           {/block}
-
-          {hook h='displayShortDescriptionProduct'}
 
         </div>
 
@@ -110,18 +120,14 @@
             {hook h='displayProductListReviews' product=$product}
           {/block}
 
-          {block name='product_quantities'}
-            {if $product.show_quantities}
-              <p id="product-quantities">{$product.quantity} {$product.quantity_label}</p>
-            {/if}
-          {/block}
+          
 
           {block name='product_availability_date'}
             {if $product.availability_date}
-              <p id="product-availability-date">
-                <label>{l s='Availability date:' d='Shop.Theme.Catalog'} </label>
+              <div id="product-availability-date">
+                <label class="font-weight-bold">{l s='Availability date:' d='Shop.Theme.Catalog'} </label>
                 <span>{$product.availability_date}</span>
-              </p>
+              </div>
             {/if}
           {/block}
 
@@ -134,8 +140,6 @@
           {block name='product_discounts'}
             {include file='catalog/_partials/product-discounts.tpl'}
           {/block}
-
-          
 
           {block name='product_buy'}
             <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh">
