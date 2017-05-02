@@ -84,8 +84,6 @@
                 <a itemprop="brand" href="{$product_brand_url}">{$product_manufacturer->name}</a> 
               </div>
             {/block}
-
-            
             
           </div>
         </header>

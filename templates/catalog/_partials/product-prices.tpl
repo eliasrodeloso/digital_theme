@@ -5,7 +5,7 @@
         {if $product.has_discount}
           <div class="product-discount">
             {hook h='displayProductPriceBlock' product=$product type="old_price"}
-            <span class="dt-regular-price">{$currency.sign} {$product.regular_price_amount}</span>
+            <span class="regular-price">{$currency.sign} {convertPrice price=$product.regular_price_amount}</span>
           </div>
         {/if}
         <link itemprop="availability" href="https://schema.org/InStock"/>
