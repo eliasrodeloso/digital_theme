@@ -65,4 +65,26 @@
 			@include flag-online-only;
 		}
 	}
+
+	.regular-price{
+		color: $brand-danger;
+		text-decoration: line-through;
+		font-size: $font-size-lg;
+		font-weight: 200;
+	}
+
+	.discount-percentage{
+		background-color: $brand-info;
+		border: $border-width solid $brand-success;
+		padding: 0 $spacer/2;
+		color: $gray-lighter;
+		margin-left: $spacer;
+	}
+
+	.price{
+		font-size: $font-size-lg*2;
+		line-height: 1;
+
+	}
+
 }

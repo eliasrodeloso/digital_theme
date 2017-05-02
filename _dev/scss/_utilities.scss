@@ -62,3 +62,7 @@ button, input, optgroup, select, textarea{
 .divide-right{
 	border-right: 2px solid $grey-100;
 }
+
+.divide-bottom{
+	border-bottom: $border-width solid $grey-100;
+}

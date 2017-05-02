@@ -114,12 +114,6 @@
 
         <div class="col-sm-12 col-md-4">
 
-          {block name="product_reviews"}
-            {hook h='displayProductListReviews' product=$product}
-          {/block}
-
-          
-
           {block name='product_availability_date'}
             {if $product.availability_date}
               <div id="product-availability-date">
@@ -156,6 +150,10 @@
 
               {block name='product_add_to_cart'}
                 {include file='catalog/_partials/product-add-to-cart.tpl'}
+              {/block}
+              
+              {block name="product_reviews"}
+                {hook h='displayProductListReviews' product=$product}
               {/block}
 
               {block name='hook_product_buttons'}

@@ -10,15 +10,16 @@
  * -------------------------------------------------------------
  */
 
- function smarty_function_convertPrice($params, Smarty_Internal_Template $template){
+function smarty_function_convertPrice($params, Smarty_Internal_Template $template){
 
 		if (empty($params['price'])) {
-        trigger_error("assign: missing 'price' parameter");
-        return;
-    }else{
-			$var = 'It is working!! '.$params['price'];
-			return $var;
+				trigger_error("assign: missing 'price' parameter");
+				return;
+		}else{
+			$fmt = new NumberFormatter('es-CO', NumberFormatter::CURRENCY);
+			return $fmt->formatCurrency($params['price'], "COP");
 		}
- }
+}
 
- ?>
+
+?>
