@@ -10308,6 +10308,21 @@ button, input, optgroup, select, textarea {
   #product-page .price {
     font-size: 2.5rem;
     line-height: 1; }
+  #product-page .input-color {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 35px;
+    width: 35px; }
+    #product-page .input-color:checked + span {
+      border: 2px solid #000000; }
+  #product-page .color {
+    font-size: 0;
+    overflow: hidden;
+    width: 35px;
+    height: 35px;
+    background-size: contain;
+    display: inline-block; }
 
 /**
 

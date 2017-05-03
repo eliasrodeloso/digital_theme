@@ -84,7 +84,28 @@
 	.price{
 		font-size: $font-size-lg*2;
 		line-height: 1;
+	}
 
+	.input-color{
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 35px;
+		width: 35px;
+
+		&:checked + span{
+			border: $border-width solid $black;
+		}
+		
+	}
+
+	.color{
+		font-size: 0;
+		overflow: hidden;
+		width: 35px;
+		height: 35px;
+		background-size: contain;
+		display: inline-block;
 	}
 
 }
