@@ -35,13 +35,14 @@
     "webpack-sources": "^0.1.4"
   },
   "dependencies": {
-    "fancybox": "^3.0.0",
-    "owl.carousel": "^2.2.0",
     "animate.css": "^3.5.2",
-    "tether": "^1.4.0",
-    "jquery": "^3.1.1",
     "bootstrap": "^4.0.0-alpha.6",
     "bootstrap-touchspin": "^3.1.1",
-    "bourbon": "^4.3.3"
+    "bourbon": "^4.3.3",
+    "fancybox": "^3.0.0",
+    "jquery": "^3.1.1",
+    "mdi": "^1.9.33",
+    "owl.carousel": "^2.2.0",
+    "tether": "^1.4.0"
   }
 }

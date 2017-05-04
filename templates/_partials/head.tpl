@@ -33,7 +33,7 @@
 {block name='stylesheets'}
   {include file="_partials/stylesheets.tpl" stylesheets=$stylesheets}
 {/block}
-
+  
 {block name='hook_header'}
   {$HOOK_HEADER nofilter}
 {/block}

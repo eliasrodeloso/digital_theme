@@ -51,7 +51,6 @@
               {if $product.condition}
               <div class="product-meta">
                 <span id="product-condition">
-                  <label class="font-weight-bold">{l s='Condition:' d='Shop.Theme.Catalog'}</label>
                   <link itemprop="itemCondition" href="{$product.condition.schema_url}"/>
                   <span>{$product.condition.label}</span>
                 </span>
@@ -70,7 +69,6 @@
             {block name='product_quantities'}
               {if $product.show_quantities}
                 <div id="product-quantities" class="product-meta">
-                  <label class="font-weight-bold">{l s="There are: " d="Shop.Theme.Catalog"}</label>
                   {$product.quantity} {$product.quantity_label}
                 </div>
               {/if}
@@ -78,10 +76,15 @@
 
             {block name='product_brand'}
               <div class="product-meta">
-                <label for="productBrand" class="font-weight-bold">
-                  {l s='Brand ' d='Shop.Theme.Catalog'}
-                </label>
-                <a itemprop="brand" href="{$product_brand_url}">{$product_manufacturer->name}</a> 
+                <a itemprop="brand" href="{$product_brand_url}">
+                  {l s="See more %brand% products" d='Shop.Theme.Catalog' sprintf=['%brand%' => $product_manufacturer->name]}
+                </a> 
+              </div>
+            {/block}
+
+            {block name="product_reviews"}
+              <div class="product-meta">
+                {hook h='displayProductListReviews' product=$product}
               </div>
             {/block}
             
@@ -152,9 +155,7 @@
                 {include file='catalog/_partials/product-add-to-cart.tpl'}
               {/block}
               
-              {block name="product_reviews"}
-                {hook h='displayProductListReviews' product=$product}
-              {/block}
+              
 
               {block name='hook_product_buttons'}
                 {hook h='displayProductButtons' product=$product}
