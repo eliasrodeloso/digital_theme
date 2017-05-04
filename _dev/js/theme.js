@@ -15,6 +15,7 @@ import 'expose-loader?Tether!tether';
 import 'bootstrap';
 import 'owl.carousel';
 import '../vendor/fancybox/dist/jquery.fancybox';
+import 'bootstrap-touchspin';
 
 import './components/dropdowns';
 import './components/slider';
@@ -22,6 +23,7 @@ import './components/newsletter';
 import './components/owl';
 import './components/block-cart';
 import './components/gallery';
+import './components/touchspin';
 
 import prestashop from 'prestashop';
 import EventEmitter from 'events';

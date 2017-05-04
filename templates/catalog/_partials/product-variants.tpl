@@ -2,7 +2,7 @@
 
   {foreach from=$groups key=id_attribute_group item=group}
     <div class="form-group row no-gutters">
-      <label class="col-12 my-2 px-0" for="group_{$id_attribute_group}">{$group.name}</label>
+      <label class="col-12 my-2 px-0 font-weight-bold" for="group_{$id_attribute_group}">{$group.name}</label>
 
       {if $group.group_type == 'select'}
 

@@ -108,4 +108,42 @@
 		display: inline-block;
 	}
 
+	.bootstrap-touchspin{
+
+		width: 20%;
+
+		.touchspin-plus{
+			background-image: url('../img/plus.svg');
+			background-size: 50%;
+			background-position: 50%;
+			background-repeat: no-repeat;
+			padding: $spacer/2;
+		}
+
+		.touchspin-minus{
+			background-image: url('../img/minus.svg');
+			background-size: 50%;
+			background-position: 50%;
+			background-repeat: no-repeat;
+			padding: $spacer/2;
+		}
+
+		.input-group-btn-vertical{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			margin-left: -2px;
+		}
+
+		.form-control{
+			background: none;
+			height: inherit;
+		}
+	}
+
+	
+
+	
+
 }

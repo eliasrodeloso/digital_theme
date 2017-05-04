@@ -10323,6 +10323,38 @@ button, input, optgroup, select, textarea {
     height: 35px;
     background-size: contain;
     display: inline-block; }
+  #product-page .bootstrap-touchspin {
+    width: 20%; }
+    #product-page .bootstrap-touchspin .touchspin-plus {
+      background-image: url(../img/dfed931d348f760d720a44f8fdcbeece.svg);
+      background-size: 50%;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      padding: 0.5rem; }
+    #product-page .bootstrap-touchspin .touchspin-minus {
+      background-image: url(../img/46d92debedd813e1dcba616dc883a13b.svg);
+      background-size: 50%;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      padding: 0.5rem; }
+    #product-page .bootstrap-touchspin .input-group-btn-vertical {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-left: -2px; }
+    #product-page .bootstrap-touchspin .form-control {
+      background: none;
+      height: inherit; }
 
 /**
 
