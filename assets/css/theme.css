@@ -10091,7 +10091,7 @@ button, input, optgroup, select, textarea {
 
 .dt-product-flags .new {
   position: absolute;
-  top: 30px;
+  top: 2rem;
   left: -5px;
   color: #fafafa;
   background-color: #ff9800;
@@ -10223,6 +10223,9 @@ button, input, optgroup, select, textarea {
         margin: 0 1rem; }
   #product-page .product-cover {
     border: 2px solid #dcdcdc; }
+    #product-page .product-cover .img {
+      width: 100%;
+      height: auto; }
   #product-page .owl-carousel {
     margin-top: 0.5rem; }
     #product-page .owl-carousel .owl-nav {
@@ -10243,7 +10246,7 @@ button, input, optgroup, select, textarea {
       border: 2px solid #dcdcdc; }
   #product-page .product-flags .new {
     position: absolute;
-    top: 30px;
+    top: 2rem;
     left: -5px;
     color: #fafafa;
     background-color: #ff9800;
@@ -10266,7 +10269,7 @@ button, input, optgroup, select, textarea {
     border-top-right-radius: 0.25rem; }
   #product-page .product-flags .online-only {
     position: absolute;
-    bottom: 130px;
+    top: 21rem;
     right: -5px;
     color: #fafafa;
     background-color: #ff9800;

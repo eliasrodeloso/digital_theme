@@ -22,6 +22,11 @@
 
 	.product-cover{
 		border: $border-width solid $gray-light;
+
+		.img{
+			width: 100%;
+			height: auto;
+		}
 	}
 
 	.owl-carousel{

@@ -10522,7 +10522,7 @@ function doAnimations($elems) {
 }
 
 $().ready( function () {
-	if( $('.page-index') ){
+	if( document.getElementById('carouselHome') != null ){
 		addTheAttr('animated fadeIn');
 		addTheClass('dt-delay-2');
 
