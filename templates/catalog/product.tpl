@@ -154,8 +154,6 @@
               {block name='product_add_to_cart'}
                 {include file='catalog/_partials/product-add-to-cart.tpl'}
               {/block}
-              
-              
 
               {block name='hook_product_buttons'}
                 {hook h='displayProductButtons' product=$product}

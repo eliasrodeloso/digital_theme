@@ -1,0 +1,22 @@
+
+#shareButtons{
+	@extend .social-follow;
+	
+	ul li{
+		border: $border-width solid $gray-light;
+		background-size: 75%;
+		background-position: 50%;
+		width: $spacer*2;
+		height: $spacer*2;
+
+		&:hover{
+			@include box-shadow-1();
+			transition: 0.2s all ease-in-out;
+		}
+
+		a{
+			transition: 0.2s all ease-in-out;
+		}
+	}
+
+}

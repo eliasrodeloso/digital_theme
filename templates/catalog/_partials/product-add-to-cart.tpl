@@ -1,4 +1,4 @@
-<div class="product-add-to-cart">
+<div class="product-add-to-cart divide-bottom mb-3">
   {if !$configuration.is_catalog}
 
     {block name='product_quantity'}

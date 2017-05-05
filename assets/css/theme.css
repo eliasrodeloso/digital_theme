@@ -16045,6 +16045,68 @@ button, input, optgroup, select, textarea {
 .divide-bottom {
   border-bottom: 2px solid #f5f5f5; }
 
+.mdi::before {
+  font-size: 24px;
+  line-height: 14px; }
+
+.btn .mdi::before {
+  position: relative;
+  top: 4px; }
+
+.btn-xs .mdi::before {
+  font-size: 18px;
+  top: 3px; }
+
+.btn-sm .mdi::before, .btn-group-sm > .btn .mdi::before {
+  font-size: 18px;
+  top: 3px; }
+
+.dropdown-menu .mdi {
+  width: 18px; }
+
+.dropdown-menu .mdi::before {
+  position: relative;
+  top: 4px;
+  left: -8px; }
+
+.nav .mdi::before {
+  position: relative;
+  top: 4px; }
+
+.navbar .navbar-toggle .mdi::before {
+  position: relative;
+  top: 4px;
+  color: #FFF; }
+
+.breadcrumb .mdi::before {
+  position: relative;
+  top: 4px; }
+
+.breadcrumb a:hover {
+  text-decoration: none; }
+
+.breadcrumb a:hover span {
+  text-decoration: underline; }
+
+.alert .mdi::before {
+  position: relative;
+  top: 4px;
+  margin-right: 2px; }
+
+.input-group-addon .mdi::before {
+  position: relative;
+  top: 3px; }
+
+.navbar-brand .mdi::before {
+  position: relative;
+  top: 2px;
+  margin-right: 2px; }
+
+.list-group-item .mdi::before {
+  position: relative;
+  top: 3px;
+  left: -3px; }
+
 .dt-product-miniature:hover {
   border: 1px solid #e91e63;
   -webkit-transition: all 300ms linear;
@@ -16377,10 +16439,6 @@ button, input, optgroup, select, textarea {
     #product-page .bootstrap-touchspin .form-control {
       background: none;
       height: inherit; }
-  #product-page .rating-product::after {
-    display: block;
-    content: "";
-    clear: both; }
 
 /**
 
@@ -16532,11 +16590,11 @@ button, input, optgroup, select, textarea {
 /*
 *	Social Follow
 */
-.social-follow ul {
+.social-follow ul, #shareButtons ul {
   margin: 0;
   padding: 0;
   display: inline-block; }
-  .social-follow ul li {
+  .social-follow ul li, #shareButtons ul li {
     display: inline-block;
     margin-right: 0.2rem;
     margin-bottom: 0.2rem;
@@ -16545,78 +16603,78 @@ button, input, optgroup, select, textarea {
     background-color: #fafafa;
     background-repeat: no-repeat;
     cursor: pointer; }
-    .social-follow ul li:nth-last-child(1) {
+    .social-follow ul li:nth-last-child(1), #shareButtons ul li:nth-last-child(1) {
       margin: 0; }
-    .social-follow ul li a {
+    .social-follow ul li a, #shareButtons ul li a {
       display: block;
       height: 100%;
       white-space: nowrap;
       text-indent: 100%;
       overflow: hidden; }
-      .social-follow ul li a:hover {
+      .social-follow ul li a:hover, #shareButtons ul li a:hover {
         color: transparent; }
 
-.social-follow .facebook {
+.social-follow .facebook, #shareButtons .facebook {
   background-image: url(../img/fa6f11d381379a7fb321475131fbb846.svg); }
-  .social-follow .facebook:hover {
+  .social-follow .facebook:hover, #shareButtons .facebook:hover {
     background-image: url(../img/d7073a2cb887b36f06cfcd185e70d6c4.svg); }
-  .social-follow .facebook::before {
+  .social-follow .facebook::before, #shareButtons .facebook::before {
     content: '';
     background-image: url(../img/fa6f11d381379a7fb321475131fbb846.svg); }
 
-.social-follow .twitter {
+.social-follow .twitter, #shareButtons .twitter {
   background-image: url(../img/07452b15a7a765de4c16f6fac3ce7be7.svg); }
-  .social-follow .twitter:hover {
+  .social-follow .twitter:hover, #shareButtons .twitter:hover {
     background-image: url(../img/8d41351957dc62b9be0deecae5bb75fd.svg); }
-  .social-follow .twitter::before {
+  .social-follow .twitter::before, #shareButtons .twitter::before {
     content: '';
     background-image: url(../img/07452b15a7a765de4c16f6fac3ce7be7.svg); }
 
-.social-follow .rss {
+.social-follow .rss, #shareButtons .rss {
   background-image: url(../img/b12eecfd228b91dde57a4b13c81be285.svg); }
-  .social-follow .rss:hover {
+  .social-follow .rss:hover, #shareButtons .rss:hover {
     background-image: url(../img/e967c735b76c45adc10a8d5e51992994.svg); }
-  .social-follow .rss::before {
+  .social-follow .rss::before, #shareButtons .rss::before {
     content: '';
     background-image: url(../img/b12eecfd228b91dde57a4b13c81be285.svg); }
 
-.social-follow .youtube {
+.social-follow .youtube, #shareButtons .youtube {
   background-image: url(../img/e27880862ce71d267ce3ba217d36b146.svg); }
-  .social-follow .youtube:hover {
+  .social-follow .youtube:hover, #shareButtons .youtube:hover {
     background-image: url(../img/d14e779b13801e7fe68e7e69a6cc266a.svg); }
-  .social-follow .youtube::before {
+  .social-follow .youtube::before, #shareButtons .youtube::before {
     content: '';
     background-image: url(../img/e27880862ce71d267ce3ba217d36b146.svg); }
 
-.social-follow .googleplus {
+.social-follow .googleplus, #shareButtons .googleplus {
   background-image: url(../img/e440c85868ac48fd60748cdcdd0dfaaf.svg); }
-  .social-follow .googleplus:hover {
+  .social-follow .googleplus:hover, #shareButtons .googleplus:hover {
     background-image: url(../img/bfebda86fbd51f3b6fe901e0bf575306.svg); }
-  .social-follow .googleplus::before {
+  .social-follow .googleplus::before, #shareButtons .googleplus::before {
     content: '';
     background-image: url(../img/e440c85868ac48fd60748cdcdd0dfaaf.svg); }
 
-.social-follow .pinterest {
+.social-follow .pinterest, #shareButtons .pinterest {
   background-image: url(../img/48bf0c0685e88902419f5a4df57903d8.svg); }
-  .social-follow .pinterest:hover {
+  .social-follow .pinterest:hover, #shareButtons .pinterest:hover {
     background-image: url(../img/ea5a5cc7f9235174adc2aed4d2b36c44.svg); }
-  .social-follow .pinterest::before {
+  .social-follow .pinterest::before, #shareButtons .pinterest::before {
     content: '';
     background-image: url(../img/48bf0c0685e88902419f5a4df57903d8.svg); }
 
-.social-follow .vimeo {
+.social-follow .vimeo, #shareButtons .vimeo {
   background-image: url(../img/cec007e083a35b064bac727429d5905d.svg); }
-  .social-follow .vimeo:hover {
+  .social-follow .vimeo:hover, #shareButtons .vimeo:hover {
     background-image: url(../img/e7ce3bfff79356e6c76eff4b406f6096.svg); }
-  .social-follow .vimeo::before {
+  .social-follow .vimeo::before, #shareButtons .vimeo::before {
     content: '';
     background-image: url(../img/cec007e083a35b064bac727429d5905d.svg); }
 
-.social-follow .instagram {
+.social-follow .instagram, #shareButtons .instagram {
   background-image: url(../img/b13a43af65532287d304863843aed03d.svg); }
-  .social-follow .instagram:hover {
+  .social-follow .instagram:hover, #shareButtons .instagram:hover {
     background-image: url(../img/0e2e936a9bcc2b4cfbadc77c47ea21e3.svg); }
-  .social-follow .instagram::before {
+  .social-follow .instagram::before, #shareButtons .instagram::before {
     content: '';
     background-image: url(../img/b13a43af65532287d304863843aed03d.svg); }
 
@@ -16728,5 +16786,19 @@ button, input, optgroup, select, textarea {
       display: inline;
       margin: 0;
       color: #fafafa; }
+
+#shareButtons ul li {
+  border: 2px solid #dcdcdc;
+  background-size: 75%;
+  background-position: 50%;
+  width: 2rem;
+  height: 2rem; }
+  #shareButtons ul li:hover {
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.375);
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out; }
+  #shareButtons ul li a {
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out; }
 
 /*# sourceMappingURL=theme.css.map*/
