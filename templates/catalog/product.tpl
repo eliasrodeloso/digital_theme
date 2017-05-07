@@ -172,95 +172,143 @@
 
       </section>
 
-      <section class="row no-gutters product-description">
+      {block name='product_pack'}
+        {if $packItems}
+          <section class="product-pack">
+            <h4 class="text-uppercase">{l s='Pack content' d='Shop.Theme.Catalog'}</h4>
+            {foreach from=$packItems item="product_pack"}
+              {block name='product_pack_miniature'}
+                {include file='catalog/_partials/pack-product.tpl' product=$product_pack}
+              {/block}
+            {/foreach}
+          </section>
+        {/if}
+      {/block}
+
+      <section class="row no-gutters product-description my-5">
         <div class="col-sm-12 col-md-12">
 
-          {if $product.is_customizable && count($product.customizations.fields)}
-            {block name='product_customization'}
-              {include file='catalog/_partials/product-customization.tpl' customizations=$product.customizations}
-            {/block}
-          {/if}
-
-          {block name='product_description'}
-            <div id="product-description">{$product.description nofilter}</div>
-          {/block}
-
-          {block name='product_features'}
+          <ul class="nav nav-tabs justify-content-center" role="tablist">
+            <li class="nav-item">
+              <a href="#description" data-toggle="tab" role="tab" class="nav-link active">
+                {l s='Product description' d='Shop.Theme.Catalog'}
+              </a>
+            </li>
+            {if $product.is_customizable && count($product.customizations.fields)}
+              <li class="nav-item">
+                <a href="#customizations" data-toggle="tab" role="tab" class="nav-link">
+                  {l s='Make it yours' d='Shop.Theme.Catalog'}
+                </a>
+              </li>
+            {/if}
             {if $product.features}
-              <section class="product-features">
-                <h3>{l s='Data sheet' d='Shop.Theme.Catalog'}</h3>
-                <ul>
-                  {foreach from=$product.features item=feature}
-                    <li>{$feature.name} - {$feature.value}</li>
-                  {/foreach}
-                </ul>
-              </section>
+              <li class="nav-item">
+                <a href="#data-sheet" data-toggle="tab" role="tab" class="nav-link">
+                  {l s='Technical data sheet' d='Shop.Theme.Catalog'}
+                </a>
+              </li>
             {/if}
-          {/block}
+          </ul>
 
-          {block name='product_pack'}
-            {if $packItems}
-              <section class="product-pack">
-                <h3>{l s='Pack content' d='Shop.Theme.Catalog'}</h3>
-                {foreach from=$packItems item="product_pack"}
-                  {block name='product_pack_miniature'}
-                    {include file='catalog/_partials/pack-product.tpl' product=$product_pack}
-                  {/block}
-                {/foreach}
-              </section>
-            {/if}
-          {/block}
+          <div class="tab-content">
 
-          {block name='product_accessories'}
-            {if $accessories}
-              <section class="product-accessories">
-                <h3>{l s='Accessories' d='Shop.Theme.Catalog'}</h3>
-                {foreach from=$accessories item="product_accessory"}
-                  {block name='product_miniature'}
-                    {include file='catalog/_partials/miniatures/product.tpl' product=$product_accessory}
-                  {/block}
-                {/foreach}
-              </section>
-            {/if}
-          {/block}
+            <div role="tabpanel" class="tab-pane fade show active" id="description">
+              {block name='product_description'}
+                <div id="product-description">{$product.description nofilter}</div>
+              {/block}
+            </div>
 
-          {block name='product_attachments'}
-            {if $product.attachments}
-              <section class="product-attachments">
-                <h3>{l s='Download' d='Shop.Theme.Actions'}</h3>
-                {foreach from=$product.attachments item=attachment}
-                  <div class="attachment">
-                    <h4>
-                      <a href="{url entity='attachment' params=['id_attachment' => $attachment.id_attachment]}">
-                        {$attachment.name}
-                      </a>
-                    </h4>
-                    <p>{$attachment.description}</p>
-                    <a href="{url entity='attachment' params=['id_attachment' => $attachment.id_attachment]}">
-                      {l s='Download' d='Shop.Theme.Actions'} ({$attachment.file_size_formatted})
-                    </a>
-                  </div>
-                {/foreach}
-              </section>
+            {if $product.is_customizable && count($product.customizations.fields)}
+              <div role="tabpanel" class="tab-pane fade" id="customizations">
+                {block name='product_customization'}
+                  {include file='catalog/_partials/product-customization.tpl' customizations=$product.customizations}
+                {/block}
+              </div>
             {/if}
-          {/block}
+
+            {if $product.features}
+              <div role="tabpanel" class="tab-pane fade" id="data-sheet">
+                {block name='product_features'}
+                  
+                  <section class="product-features">
+                    <h3>{l s='Data sheet' d='Shop.Theme.Catalog'}</h3>
+                    <ul>
+                      {foreach from=$product.features item=feature}
+                        <li>{$feature.name} - {$feature.value}</li>
+                      {/foreach}
+                    </ul>
+                  </section>
+                  
+                {/block}
+              </div>
+            {/if}
+
+          </div>
+
+          
 
         </div>
       </section>
 
-      <footer class="row no-gutter product-footer">
-        {foreach from=$product.extraContent item=extra key=extraKey}
-          <div class="{$extra.attr.class}" id="extra-{$extraKey}">
-            {$extra.content nofilter}
-          </div>
-        {/foreach}
-        {block name='product_footer'}
-          
-          {hook h='displayFooterProduct' product=$product category=$category}
-        {/block}
-      </footer>
+      
+
+      
+      {block name='product_attachments'}
+        {if $product.attachments}
+          <section class="product-attachments">
+            <h4 class="text-uppercase">{l s='Download' d='Shop.Theme.Actions'}</h4>
+            {foreach from=$product.attachments item=attachment}
+              <div class="attachment">
+                <h5>
+                  <a href="{url entity='attachment' params=['id_attachment' => $attachment.id_attachment]}">
+                    {$attachment.name}
+                  </a>
+                </h5>
+                <p>{$attachment.description}</p>
+                <a href="{url entity='attachment' params=['id_attachment' => $attachment.id_attachment]}">
+                  {l s='Download' d='Shop.Theme.Actions'} ({$attachment.file_size_formatted})
+                </a>
+              </div>
+            {/foreach}
+          </section>
+        {/if}
+      {/block}
+
+      
     {/block}
 
   </section>
+
+  {block name='product_accessories'}
+    {if $accessories}
+      <section class="product-accessories row mb-5">
+        <h2 class="section-title w-100 mx-3">
+          <i class="mdi mdi-tag-heart md-28"></i>
+          {l s='Accessories' d='Shop.Theme.Catalog'}
+        </h2>
+        {foreach from=$accessories item="product_accessory"}
+
+          {block name='product_miniature'}
+            <div class="col-sm-12 col-md-3 product-miniature">
+              {include file='catalog/_partials/miniatures/product.tpl' product=$product_accessory}
+            </div>
+          {/block}
+
+        {/foreach}
+      </section>
+    {/if}
+  {/block}
+
+  <footer class="row no-gutter product-footer">
+    {foreach from=$product.extraContent item=extra key=extraKey}
+      <div class="{$extra.attr.class}" id="extra-{$extraKey}">
+        {$extra.content nofilter}
+      </div>
+    {/foreach}
+    {block name='product_footer'}
+      
+      {hook h='displayFooterProduct' product=$product category=$category}
+    {/block}
+  </footer>
 
 {/block}

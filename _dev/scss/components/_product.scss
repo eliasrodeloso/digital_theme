@@ -20,6 +20,10 @@
 		}
 	}
 
+	.rating-product{
+		display: inline;
+	}
+
 	.product-cover{
 		border: $border-width solid $gray-light;
 
@@ -145,6 +149,36 @@
 			background: none;
 			height: inherit;
 		}
+	}
+
+	.tab-pane{
+		padding: $spacer;
+		background-color: $white;
+	}
+
+	.nav-item{
+		margin-bottom: -0.125rem;
+	}
+
+	.nav-link{
+		background-color: transparent;
+		border: none;
+		color: $gray;
+		text-transform: uppercase;
+		font-family: "Montserrat";
+
+		&.active{
+			color: $brand-primary;
+			border-bottom: $border-width+1 solid $brand-primary;
+		}
+
+		&:hover{
+			color: $brand-primary;
+		}
+	}
+
+	.product-miniature + .product-miniature{
+		padding: $spacer;
 	}
 
 }

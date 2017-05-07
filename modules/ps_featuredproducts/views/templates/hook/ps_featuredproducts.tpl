@@ -1,6 +1,6 @@
 <section id="featuredProducts">
   <h2 class="d-flex align-items-center">
-    <i class="material-icons md-30 mr-2">flash_on</i>
+    <i class="mdi mdi-crown mr-2 md-28"></i>
     {l s='Featured Products' d='Modules.FeaturedProducts.Shop'}
   </h2>
   <div class="row ">

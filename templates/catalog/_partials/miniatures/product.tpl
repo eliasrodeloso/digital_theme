@@ -29,8 +29,6 @@
       {/block}
       *}
 
-      
-
       {block name='product_quick_view'}
       {/block}
 
@@ -43,13 +41,13 @@
         {if $product.show_price}
           <div class="product-price-and-shipping">
             {if $product.has_discount}
-              <p class="dt-regular-price">$ {$product.regular_price_amount}</p>
+              <p class="dt-regular-price">{convertPrice price=$product.regular_price_amount currency=$currency.iso_code}</p>
               {if $product.discount_type === 'percentage'}
                 <span class="dt-discount-percentage">{$product.discount_percentage}</span>
               {/if}
-              <p itemprop="price" class="dt-discounted-price">{$currency.sign} {$product.price_amount}</p>
+              <p itemprop="price" class="dt-discounted-price">{convertPrice price=$product.price_amount currency=$currency.iso_code}</p>
             {else}
-              <p itemprop="price" class="dt-undiscounted-price">{$currency.sign} {$product.regular_price_amount}</p>
+              <p itemprop="price" class="dt-undiscounted-price">{convertPrice price=$product.regular_price_amount}</p>
             {/if}
           </div>
         {/if}

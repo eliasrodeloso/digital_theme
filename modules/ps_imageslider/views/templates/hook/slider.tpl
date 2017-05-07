@@ -1,11 +1,11 @@
 
-<div class="col-sm-12 col-md-9">
+<div class="col-sm-12 col-md-12">
   {if $homeslider.slides}
     <div id="carouselHome" class="carousel slide hidden-sm-down" data-interval="{$homeslider.speed}" data-wrap="{(string)$homeslider.wrap}" data-pause="{$homeslider.pause}" >
       <div role="listbox" class="carousel-inner">
         {foreach from=$homeslider.slides item=slide name='homeslider'}
           <figure class="carousel-item {if $smarty.foreach.homeslider.first}active{/if}">
-            <img src="{$slide.image_url}" alt="{$slide.legend|escape}" class="d-block img-fluid">
+            <img src="{$slide.image_url}" alt="{$slide.legend|escape}" class="d-block img-fluid dt-width-max">
             {if $slide.title || $slide.description}
               <figcaption class="carousel-caption d-none d-md-block">
                 <h1 class="dt-delay-1" data-animation="animated fadeIn">{$slide.title}</h1>

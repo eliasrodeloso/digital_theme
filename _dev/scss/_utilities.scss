@@ -131,3 +131,11 @@ button, input, optgroup, select, textarea{
     top: 3px;
     left: -3px
 }
+
+.section-title{
+    line-height: $line-height-lg;
+    border-bottom: 2px solid $pink;
+    margin-bottom: $spacer*2;
+    padding: 0 1rem;
+    text-transform: uppercase;
+}

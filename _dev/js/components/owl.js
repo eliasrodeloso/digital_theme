@@ -1,6 +1,6 @@
 
 if ($('#product')) {
-	$('.owl-carousel').owlCarousel({
+	$('#carousel-product').owlCarousel({
 		margin: 10,
 		nav: true,
 		responsive: {
@@ -19,8 +19,9 @@ if ($('#product')) {
 		navText: ['navigate_before', 'navigate_next']
 	});
 
-} else {
-	$('.owl-carousel').owlCarousel({
+} 
+
+$('#carousel-home').owlCarousel({
 		margin: 10,
 		responsive: {
 			
@@ -33,10 +34,8 @@ if ($('#product')) {
 				nav: false
 			},
 			1000: {
-				items: 12,
+				items: 10,
 				nav: false
 			},
 		}
 	});
-}
-

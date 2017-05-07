@@ -8,7 +8,7 @@
   {/block}
 
   {block name='product_images'}
-    <div class="owl-carousel">
+    <div id="carousel-product" class="owl-carousel">
       {foreach from=$product.images item=image}
         <div class="item">
           <a href="{$image.large.url}" data-fancybox="gallery" data-caption="{$image.legend}">

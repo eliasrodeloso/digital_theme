@@ -2,8 +2,8 @@
 <div class="row no-gutters dt-brands my-3">
 	
 	<div class="col-12">
-		<h6>{$title}</h6>
-		<div class="owl-carousel carousel">
+		<h2>{$title}</h2>
+		<div id="carousel-home" class="owl-carousel carousel">
 			
 			{foreach from=$brands item=brand}
 				<span>
