@@ -113,6 +113,10 @@
             <div id="product-description-short" itemprop="description">{$product.description_short nofilter}</div>
           {/block}
 
+          {block name='product_discounts'}
+            {include file='catalog/_partials/product-discounts.tpl'}
+          {/block}
+
         </div>
 
         <div class="col-sm-12 col-md-4">
@@ -120,8 +124,9 @@
           {block name='product_availability_date'}
             {if $product.availability_date}
               <div id="product-availability-date">
-                <label class="font-weight-bold">{l s='Availability date:' d='Shop.Theme.Catalog'} </label>
-                <span>{$product.availability_date}</span>
+                <h6>{l s='Availability date: %date%' d='Shop.Theme.Catalog' sprintf=[
+                  '%date%' => $product.availability_date|date_format
+                ]}</h6>
               </div>
             {/if}
           {/block}
@@ -130,10 +135,6 @@
             <div class="product-out-of-stock">
               {hook h='actionProductOutOfStock' product=$product}
             </div>
-          {/block}
-
-          {block name='product_discounts'}
-            {include file='catalog/_partials/product-discounts.tpl'}
           {/block}
 
           {block name='product_buy'}
@@ -146,10 +147,11 @@
                 {include file='catalog/_partials/product-prices.tpl'}
               {/block}
 
-              {block name='product_variants'}
-                {include file='catalog/_partials/product-variants.tpl'}
-              {/block}
-
+              {if $groups && $groups.count}
+                {block name='product_variants'}
+                  {include file='catalog/_partials/product-variants.tpl'}
+                {/block}
+              {/if}
 
               {block name='product_add_to_cart'}
                 {include file='catalog/_partials/product-add-to-cart.tpl'}
@@ -171,39 +173,49 @@
         </div>
 
       </section>
-
+      
       {block name='product_pack'}
         {if $packItems}
-          <section class="product-pack">
-            <h4 class="text-uppercase">{l s='Pack content' d='Shop.Theme.Catalog'}</h4>
-            {foreach from=$packItems item="product_pack"}
-              {block name='product_pack_miniature'}
-                {include file='catalog/_partials/pack-product.tpl' product=$product_pack}
-              {/block}
-            {/foreach}
+          <section class="product-pack my-5">
+            <h2 class="section-title">
+              <i class="mdi mdi-package-variant md-30"></i>
+              {l s='Pack content' d='Shop.Theme.Catalog'}
+            </h2>
+            <div class="row">
+
+              {foreach from=$packItems item="product_pack"}
+                <div class="col-sm-12 col-md-3">
+                  {include file='catalog/_partials/miniatures/product.tpl' product=$product_pack}
+                </div>
+              {/foreach}
+
+            </div>
           </section>
         {/if}
       {/block}
 
-      <section class="row no-gutters product-description my-5">
+      <section class="row no-gutters product-description mt-5">
         <div class="col-sm-12 col-md-12">
 
-          <ul class="nav nav-tabs justify-content-center" role="tablist">
-            <li class="nav-item">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item mr-2">
               <a href="#description" data-toggle="tab" role="tab" class="nav-link active">
+                <i class="mdi mr-2 mdi-file-document"></i>
                 {l s='Product description' d='Shop.Theme.Catalog'}
               </a>
             </li>
             {if $product.is_customizable && count($product.customizations.fields)}
-              <li class="nav-item">
+              <li class="nav-item mr-2">
                 <a href="#customizations" data-toggle="tab" role="tab" class="nav-link">
+                  <i class="mdi mr-2 mdi-heart-box-outline"></i>
                   {l s='Make it yours' d='Shop.Theme.Catalog'}
                 </a>
               </li>
             {/if}
             {if $product.features}
-              <li class="nav-item">
+              <li class="nav-item mr-2">
                 <a href="#data-sheet" data-toggle="tab" role="tab" class="nav-link">
+                  <i class="mdi mr-2 mdi-information-outline"></i>
                   {l s='Technical data sheet' d='Shop.Theme.Catalog'}
                 </a>
               </li>

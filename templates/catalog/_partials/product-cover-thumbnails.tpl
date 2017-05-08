@@ -2,7 +2,7 @@
   {block name='product_cover'}
     <div class="product-cover">
       <a href="{$product.cover.bySize.large_default.url}" data-fancybox="gallery" data-caption="{$product.cover.legend}">
-          <img class="img-fluid" src="{$product.cover.bySize.medium_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" itemprop="image">    
+          <img class="img-fluid dt-width-max" src="{$product.cover.bySize.medium_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" itemprop="image">    
       </a>
     </div>
   {/block}

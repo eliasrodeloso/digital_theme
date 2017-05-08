@@ -21,5 +21,4 @@ function smarty_function_convertPrice($params, Smarty_Internal_Template $templat
 		}
 }
 
-
 ?>

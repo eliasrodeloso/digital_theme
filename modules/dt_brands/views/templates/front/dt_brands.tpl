@@ -2,7 +2,10 @@
 <div class="row no-gutters dt-brands my-3">
 	
 	<div class="col-12">
-		<h2>{$title}</h2>
+		<h2>
+			<i class="mdi mdi-cube-outline md-30"></i>
+			{$title}
+		</h2>
 		<div id="carousel-home" class="owl-carousel carousel">
 			
 			{foreach from=$brands item=brand}

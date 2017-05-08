@@ -73,6 +73,10 @@
 		.online-only {
 			@include flag-online-only;
 		}
+
+		.pack{
+			@include flag-pack;
+		}
 	}
 
 	.regular-price{
@@ -177,8 +181,8 @@
 		}
 	}
 
-	.product-miniature + .product-miniature{
-		padding: $spacer;
+	.nav-tabs{
+		border-bottom: $border-width solid $gray-light;
 	}
 
 }

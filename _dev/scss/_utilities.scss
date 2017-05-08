@@ -67,6 +67,10 @@ button, input, optgroup, select, textarea{
 	border-bottom: $border-width solid $grey-100;
 }
 
+.divide-top{
+    border-top: $border-width solid $grey-100;
+}
+
 //MDI Snippets for Bootstrap
 
 .mdi::before {

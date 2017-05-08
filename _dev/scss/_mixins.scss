@@ -115,3 +115,20 @@
 		margin: 0 $spacer/2;
 	}
 }
+
+@mixin flag-pack{
+	position: absolute;
+	right: -5px;
+	top: 2rem;
+	color: $gray-lightest;
+	background-color: $orange;
+	padding: 0.1rem 0.2rem;
+	@include box-shadow-1;
+	text-align: center;
+	text-transform: uppercase;
+	&::before{
+		@extend .mdi:before;
+		content: mdi(package-variant-closed);
+		margin-right: $spacer/3;
+	}
+}

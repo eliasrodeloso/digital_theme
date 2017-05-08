@@ -9303,7 +9303,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   font-weight: normal;
   font-style: normal; }
 
-.mdi:before,
+.mdi:before, #product-page .product-flags .pack::before,
 .mdi-set {
   display: inline-block;
   font: normal normal normal 24px/1 "Material Design Icons";
@@ -15109,16 +15109,16 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .mdi-zip-box:before {
   content: "\F5C4"; }
 
-.mdi-18px.mdi-set, .mdi-18px.mdi:before {
+.mdi-18px.mdi-set, .mdi-18px.mdi:before, #product-page .product-flags .mdi-18px.pack::before {
   font-size: 18px; }
 
-.mdi-24px.mdi-set, .mdi-24px.mdi:before {
+.mdi-24px.mdi-set, .mdi-24px.mdi:before, #product-page .product-flags .mdi-24px.pack::before {
   font-size: 24px; }
 
-.mdi-36px.mdi-set, .mdi-36px.mdi:before {
+.mdi-36px.mdi-set, .mdi-36px.mdi:before, #product-page .product-flags .mdi-36px.pack::before {
   font-size: 36px; }
 
-.mdi-48px.mdi-set, .mdi-48px.mdi:before {
+.mdi-48px.mdi-set, .mdi-48px.mdi:before, #product-page .product-flags .mdi-48px.pack::before {
   font-size: 48px; }
 
 .mdi-dark:before {
@@ -16045,6 +16045,9 @@ button, input, optgroup, select, textarea {
 .divide-bottom {
   border-bottom: 2px solid #f5f5f5; }
 
+.divide-top {
+  border-top: 2px solid #f5f5f5; }
+
 .mdi::before {
   font-size: 24px;
   line-height: 14px; }
@@ -16433,6 +16436,19 @@ button, input, optgroup, select, textarea {
               font-feature-settings: 'liga';
       content: "laptop";
       margin: 0 0.5rem; }
+  #product-page .product-flags .pack {
+    position: absolute;
+    right: -5px;
+    top: 2rem;
+    color: #fafafa;
+    background-color: #ff9800;
+    padding: 0.1rem 0.2rem;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.375);
+    text-align: center;
+    text-transform: uppercase; }
+    #product-page .product-flags .pack::before {
+      content: "\F3D7";
+      margin-right: 0.33333rem; }
   #product-page .regular-price {
     color: #b71c1c;
     text-decoration: line-through;
@@ -16510,8 +16526,8 @@ button, input, optgroup, select, textarea {
       border-bottom: 3px solid #2196f3; }
     #product-page .nav-link:hover {
       color: #2196f3; }
-  #product-page .product-miniature + .product-miniature {
-    padding: 1rem; }
+  #product-page .nav-tabs {
+    border-bottom: 2px solid #dcdcdc; }
 
 /**
 
@@ -16784,7 +16800,7 @@ button, input, optgroup, select, textarea {
   visibility: visible; }
 
 .dt-brands .carousel {
-  padding: 0.5rem 1rem; }
+  padding: 0 1rem 0.5rem 1rem; }
 
 #main-menu {
   display: none;
