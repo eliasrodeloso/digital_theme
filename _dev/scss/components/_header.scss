@@ -3,25 +3,25 @@
 
 	.before-nav{
 		background-color: $grey-50;
-		border-bottom: $border-width/2 solid $grey-500;
+		border-bottom: $border-width/2 $border-style $grey-500;
 
 		.btn-secondary{
 			color: $blue-500;
 			background-color: transparent;
 			border: 0;
-			border-right: $border-width/2 solid $grey-500;
-			border-left: $border-width/2 solid $grey-500;
+			border-right: $border-width/2 $border-style $grey-500;
+			border-left: $border-width/2 $border-style $grey-500;
 
 			&:hover{
 				color: $blue-400;
 				text-decoration: transparent;
-				transition: all 0.2s ease-in-out;
+				transition: all $transition-duration ease-in-out;
 			}
 
 		}
 
 		.dropdown-menu{
-			animation-duration: 0.3s;
+			animation-duration: $animation-duration;
 		}
 
 		#dropdownCurrency{

@@ -22,15 +22,20 @@
       <div class="container">
         <div class="row no-gutters">
           <div class="col-md-1 col-lg-1">
-            <button class="dt-toggler-menu d-flex align-items-center flex-column" type="button" data-toggle="collapse" data-target="#dtMenu" aria-controls="dtMenu" aria-expanded="false" aria-label="Toggle navigation">
-              <i class="material-icons md-36">&#xE5D2;</i>
-              <span class="dt-navtitle">{l s='Categories' d='Shop.Theme.Actions'}</span>
-            </button>
+            <div class="dropdown" id="dropdownMainMenu">
+              <button class="dt-toggler-menu d-flex align-items-center flex-column dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenu" >
+                <i class="material-icons md-36">&#xE5D2;</i>
+                <span class="dt-navtitle">{l s='Categories' d='Shop.Theme.Actions'}</span>
+              </button>
+              <div class="main-menu dropdown-menu animated slideInUp" aria-labelledby="dropdownMenu">
+                <div class="row">
+                  <p class="col-12">
+                    {hook h="displayMenu"}
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div id="main-menu" class="row">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam facere eaque cum impedit nulla odit aliquid assumenda quia molestiae quos, dolore dignissimos earum provident illum sed dolor neque, repellat atque.</p>
-          </div>
-
           <div class="col-md-2 col-lg-2 d-flex justify-content-around align-items-center">
             {block name='header_logo'}
               <a href="{$urls.base_url}" title="{$shop.name}">

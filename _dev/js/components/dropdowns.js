@@ -27,3 +27,10 @@ $('#dropdownCustomer').on('hidden.bs.dropdown', function () {
 	changeBackdropStateTo('hide');
 });
 
+$('#dropdownMainMenu').on('show.bs.dropdown', function () {
+	changeBackdropStateTo('show');
+});
+
+$('#dropdownMainMenu').on('hidden.bs.dropdown', function () {
+	changeBackdropStateTo('hide');
+});

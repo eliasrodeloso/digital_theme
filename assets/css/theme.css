@@ -16114,8 +16114,8 @@ button, input, optgroup, select, textarea {
     #header .before-nav .btn-secondary:hover {
       color: #42a5f5;
       text-decoration: transparent;
-      -webkit-transition: all 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out; }
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
   #header .before-nav .dropdown-menu {
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s; }
@@ -16645,14 +16645,18 @@ button, input, optgroup, select, textarea {
     content: '';
     background-image: url(../img/b13a43af65532287d304863843aed03d.svg); }
 
-#main-menu {
-  display: none;
-  width: 100px;
-  height: 100px;
-  z-index: 1000;
-  position: absolute;
-  top: 50px;
-  left: 50px; }
+#dropdownMainMenu .dropdown-toggle::after {
+  border: 0;
+  display: none; }
+
+.main-menu {
+  width: 71.9rem;
+  top: 99%;
+  border: 0;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  background-color: #fafafa;
+  margin: 0; }
 
 /*
 *	Styles for all template files of wtcustomhtml module
@@ -16679,15 +16683,6 @@ button, input, optgroup, select, textarea {
 
 .dt-brands .carousel {
   padding: 0 1rem 0.5rem 1rem; }
-
-#main-menu {
-  display: none;
-  width: 100px;
-  height: 100px;
-  z-index: 1000;
-  position: absolute;
-  top: 50px;
-  left: 50px; }
 
 #customText {
   margin: 1rem 0; }

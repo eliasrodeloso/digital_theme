@@ -10419,7 +10419,13 @@ $('#dropdownCustomer').on('hidden.bs.dropdown', function () {
 	changeBackdropStateTo('hide');
 });
 
+$('#dropdownMainMenu').on('show.bs.dropdown', function () {
+	changeBackdropStateTo('show');
+});
 
+$('#dropdownMainMenu').on('hidden.bs.dropdown', function () {
+	changeBackdropStateTo('hide');
+});
 
 /***/ }),
 /* 5 */
@@ -24623,10 +24629,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_gallery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__components_gallery__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_touchspin__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_touchspin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__components_touchspin__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_prestashop__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_prestashop___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_prestashop__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_events__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_events___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_events__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_menu__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_menu___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__components_menu__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_prestashop__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_prestashop___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_prestashop__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_events__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_events___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_events__);
 /**
  * 
  * DISCLAIMER
@@ -24657,13 +24665,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-for (var i in __WEBPACK_IMPORTED_MODULE_14_events___default.a.prototype) {
-  __WEBPACK_IMPORTED_MODULE_13_prestashop___default.a[i] = __WEBPACK_IMPORTED_MODULE_14_events___default.a.prototype[i];
+
+for (var i in __WEBPACK_IMPORTED_MODULE_15_events___default.a.prototype) {
+  __WEBPACK_IMPORTED_MODULE_14_prestashop___default.a[i] = __WEBPACK_IMPORTED_MODULE_15_events___default.a.prototype[i];
 }
 
 
 
 
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports) {
+
+
+/*$('#btnMenu').click( function () {
+	$('#main-menu').addClass('d-block');
+})
+*/
 
 /***/ })
 /******/ ]);

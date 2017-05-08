@@ -24,6 +24,7 @@ import './components/owl';
 import './components/block-cart';
 import './components/gallery';
 import './components/touchspin';
+import './components/menu';
 
 import prestashop from 'prestashop';
 import EventEmitter from 'events';
