@@ -1,3 +1,6 @@
+//Theme variables
+@import '_variables';
+
 // Vendor
 @import '_fonts';
 @import '~bootstrap/scss/bootstrap';
@@ -8,7 +11,6 @@
 @import '../vendor/fancybox/dist/jquery.fancybox';
 
 // Partials
-@import '_md-colors';
 @import '_mixins';
 @import '_utilities';
 

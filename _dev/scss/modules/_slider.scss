@@ -2,18 +2,17 @@
 #carouselHome{
 	width: 100%;
 	margin-top: 0;
-	padding: $spacer $spacer/2 0 0;
 
 	figure {
 		margin: 0;
 	}
 
 	.carousel-caption {
-		right: 0;
-		left: $spacer*2;
-		bottom: $spacer*6;
+		left: $spacer*8;
+		top: $spacer*6;
 		padding: $spacer;
 		width: 40%;
+		text-align: left;
 		
 		h1{
 			text-transform: uppercase;
@@ -24,6 +23,35 @@
 
 	.carousel-indicators{
 		bottom: 0;
+	}
+
+	.carousel-control-next, .carousel-control-prev{
+		opacity: 1
+	}
+
+	.arrow{
+		background-color: $brand-primary;
+		display: none;
+		padding: $spacer $spacer/2;
+		transition: all 0.2s ease-in-out;
+
+		.mdi::before{
+			position: relative;
+			top: 5px;
+			font-size: 36px;
+			line-height: 16px;
+		}
+
+		&:hover{
+			background-color: $brand-secondary;
+			transition: all 0.2s ease-in-out;
+		}
+	}
+
+	&:hover{
+		.arrow{
+			display: initial;
+		}
 	}
 }
 

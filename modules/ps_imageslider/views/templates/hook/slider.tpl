@@ -10,7 +10,7 @@
               <figcaption class="carousel-caption d-none d-md-block">
                 <h1 class="dt-delay-1" data-animation="animated fadeIn">{$slide.title}</h1>
                 {$slide.description nofilter}
-                <a data-animation="animated fadeIn" href="{$slide.url}" class="btn btn-outline-primary dt-upper dt-delay-3">
+                <a data-animation="animated fadeIn" href="{$slide.url}" class="btn btn-outline-primary btn-lg text-uppercase dt-delay-3 mt-2">
                   {l s='Buy now >>' d='Shop.Theme.Actions'}
                 </a>
               </figcaption>
@@ -24,14 +24,14 @@
         {/foreach}
       </ol>
       <a class="carousel-control-prev" href="#carouselHome" role="button" data-slide="prev">
-        <span class="hidden-sm-down" aria-hidden="true">
-          <i class="material-icons md-36">&#xE5CB;</i>
+        <span class="hidden-sm-down arrow" aria-hidden="true">
+          <i class="mdi mdi-arrow-left"></i>
         </span>
         <span class="sr-only">Anterior</span>
       </a>
       <a class="carousel-control-next" href="#carouselHome" role="button" data-slide="next">
-        <span class="hidden-sm-down" aria-hidden="true">
-          <i class="material-icons md-36">&#xE5CC;</i>
+        <span class="hidden-sm-down arrow" aria-hidden="true">
+          <i class="mdi mdi-arrow-right"></i>
         </span>
         <span class="sr-only">Siguiente</span>
       </a>
