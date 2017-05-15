@@ -1,6 +1,5 @@
 //Theme variables
 @import '_variables';
-
 // Vendor
 @import '_fonts';
 @import '~bootstrap/scss/bootstrap';
@@ -9,11 +8,10 @@
 @import '~mdi/scss/functions';
 @import '~mdi/scss/materialdesignicons';
 @import '../vendor/fancybox/dist/jquery.fancybox';
-
+@import '~font-awesome/scss/font-awesome';
 // Partials
 @import '_mixins';
 @import '_utilities';
-
 // Theme components
 @import 'components/product-miniture';
 @import 'components/header';
@@ -21,7 +19,6 @@
 @import 'components/breadcrumb';
 @import 'components/product';
 //@import 'components/fancybox';
-
 // Theme modules
 @import 'modules/searchbar';
 @import 'modules/shoppingcart';
@@ -36,11 +33,4 @@
 @import 'modules/customtext';
 @import 'modules/emailsubscription';
 @import 'modules/socialsharing';
-
-
-
-
-
-
-
-
+@import 'modules/wtmegamenu';
