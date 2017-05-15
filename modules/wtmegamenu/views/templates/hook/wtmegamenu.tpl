@@ -1,6 +1,7 @@
 
 <!-- Module Megamenu-->
 <div id="wt-menu-horizontal" class="wt-menu-horizontal">
+<div class="container">
 	{$id_lang = Context::getContext()->language->id}
 	<div class="title-menu-mobile"><h6>{l s='Navigation' d='Modules.WTMegamenu'}</h6></div>
 
@@ -19,6 +20,7 @@
 						<a href="{$menu.link}">{$menu.title}</a>
 						{if count($menu.sub_menu) > 0}
 							<a href="" class="dropdown-toggle dropdown-toggle-split" id="menuDrop{$smarty.foreach.menus.iteration}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+								<i class="mdi mdi-chevron-down"></i>
 								<span class="sr-only">Toggle Dropdown</span>
 							</a>
 						{/if}
@@ -42,7 +44,7 @@
 																	{$id_lang = Context::getContext()->language->id}
 																	{$id_lang = Context::getContext()->language->id}
 																	{foreach from = $sub_menu_item.product item=product name=product}
-																	<div class="product-container clearfix">
+																	<div class="">
 																		<h3 class="product_-name">
 																			<a class="product-name" href="{$product.link}" title="{$product.name}" itemprop="url" >
 																				{$product.name|truncate:25:''}
@@ -140,5 +142,6 @@
 		addMoreResponsive(nIpadHorizontal,nIpadVertical,htmlLiH,htmlLiV,htmlMenu);
 		});
 	</script>
+</div>
 </div>
 <!-- /Module Megamenu -->
