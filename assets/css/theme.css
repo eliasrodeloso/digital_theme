@@ -19118,5 +19118,26 @@ button, input, optgroup, select, textarea {
     left: -157px;
     padding: 0 1rem;
     margin: 0; }
+  #wt-menu-horizontal .dt-dropdown-item {
+    display: block;
+    width: 100%;
+    clear: both;
+    white-space: nowrap;
+    padding: 0.5rem 1rem;
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out; }
+    #wt-menu-horizontal .dt-dropdown-item:hover {
+      background-color: #2196f3; }
+      #wt-menu-horizontal .dt-dropdown-item:hover .dt-dropdown-link {
+        color: #fafafa; }
+    #wt-menu-horizontal .dt-dropdown-item .dt-dropdown-link {
+      padding: 0.5rem;
+      text-decoration: none; }
+      #wt-menu-horizontal .dt-dropdown-item .dt-dropdown-link:hover {
+        text-decoration: none; }
+    #wt-menu-horizontal .dt-dropdown-item:first-of-type {
+      margin-top: 0.5rem; }
+    #wt-menu-horizontal .dt-dropdown-item:last-of-type {
+      margin-bottom: 0.5rem; }
 
 /*# sourceMappingURL=theme.css.map*/
