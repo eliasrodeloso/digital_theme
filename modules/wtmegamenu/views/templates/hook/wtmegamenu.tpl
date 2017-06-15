@@ -30,14 +30,14 @@
 
 								{foreach from=$menu.sub_menu item=menu_row name=menu_row}
 
-									<div class="row {$menu_row.class}">
+									<div class="row no-gutters {$menu_row.class}">
 
 										{if isset($menu_row.list_col) && count($menu_row.list_col) > 0}
 											{foreach from=$menu_row.list_col item= menu_col name=menu_col}
 												
-												<div class="wt-menu-col col-xs-12 {$menu_col.width} {$menu_col.class} {$menu.type|escape:'quotes':'UTF-8'}">
+												<div class="wt-menu-col {$menu_col.width} {$menu_col.class} {$menu.type}">
 													{if count($menu_col.list_menu_item) > 0}
-														<ul class="ul-column ">
+														<ul class="ul-column">
 														{foreach from=$menu_col.list_menu_item item= sub_menu_item name=sub_menu_item}
 															<li class="menu-item {if $sub_menu_item.type_item == 1} item-header{else} item-line{/if} {if $sub_menu_item.type_link == 4}product-block{/if}">
 																{if $sub_menu_item.type_link == 4}
@@ -57,15 +57,13 @@
 																			</a>
 																			{if isset($product.show_price) && $product.show_price && !isset($restricted_country_mode)}
 																				{if isset($product.specific_prices) && $product.specific_prices && isset($product.specific_prices.reduction) && $product.specific_prices.reduction > 0}
-																						<p class="sale-bkg animated" href="{$product.link}">
-																									<span class="sale">
-																									{if $product.specific_prices && $product.specific_prices.reduction_type == 'percentage'}
-																									-{$product.specific_prices.reduction|escape:'quotes':'UTF-8' * 100}%
-																									{else}
-																									-{$product.price_without_reduction-$product.price|floatval}
-																									{/if}
-																									</span>
-																								</p>
+                                                                                    <p class="sale-bkg animated" href="{$product.link}">
+                                                                                        {if $product.specific_prices && $product.specific_prices.reduction_type == 'percentage'}
+                                                                                        -{$product.specific_prices.reduction|escape:'quotes':'UTF-8' * 100}%
+                                                                                        {else}
+                                                                                        -{$product.price_without_reduction-$product.price|floatval}
+                                                                                        {/if}
+                                                                                    </p>
 																				{/if}
 																				{/if}
 																			

@@ -60,8 +60,47 @@
   .dropdown-content{
     min-width: map-get($container-max-widths, lg);
     left: -157px;
-    padding: 0 $spacer;
+    padding: 0;
     margin: 0;
+  }
+  
+  .ul-column .item-line a{
+    display: block;
+    padding: $spacer * 0.5 $spacer;
+    transition: all $transition-duration ease-in-out;
+    
+    &:hover{
+      background-color: $brand-primary;
+      color: $gray-lightest;
+      text-decoration: none;
+    }
+  }
+
+  .sub-menu{
+    border-left: $border-width * 2 $border-style $brand-primary;
+    border-right: $border-width $border-style $gray-lighter;  
+  }
+
+  .submenu-promo{
+    padding: $spacer;
+    
+    .ul-column{
+
+      .item-line a{
+        display: block;
+        padding: 0;
+        text-align: center;
+
+        &:hover {
+          background-color: transparent;
+          text-decoration: none;
+        }
+
+        img{
+          max-width: 100%;
+        }
+      }
+    }
   }
 
   .dt-dropdown-item{
@@ -86,7 +125,6 @@
 
       &:hover{
         text-decoration: none;
-        
       }
     }
     

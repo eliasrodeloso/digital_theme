@@ -19116,8 +19116,31 @@ button, input, optgroup, select, textarea {
   #wt-menu-horizontal .dropdown-content {
     min-width: 990px;
     left: -157px;
-    padding: 0 1rem;
+    padding: 0;
     margin: 0; }
+  #wt-menu-horizontal .ul-column .item-line a {
+    display: block;
+    padding: 0.5rem 1rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    #wt-menu-horizontal .ul-column .item-line a:hover {
+      background-color: #2196f3;
+      color: #fafafa;
+      text-decoration: none; }
+  #wt-menu-horizontal .sub-menu {
+    border-left: 4px solid #2196f3;
+    border-right: 2px solid #eeeeee; }
+  #wt-menu-horizontal .submenu-promo {
+    padding: 1rem; }
+    #wt-menu-horizontal .submenu-promo .ul-column .item-line a {
+      display: block;
+      padding: 0;
+      text-align: center; }
+      #wt-menu-horizontal .submenu-promo .ul-column .item-line a:hover {
+        background-color: transparent;
+        text-decoration: none; }
+      #wt-menu-horizontal .submenu-promo .ul-column .item-line a img {
+        max-width: 100%; }
   #wt-menu-horizontal .dt-dropdown-item {
     display: block;
     width: 100%;
