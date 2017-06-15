@@ -19,7 +19,7 @@
     {/block}
   </header>
 
-  <div class="page-wrapper container">
+  <div class="page-wrapper">
     <div id="backdrop" class="dark-backdrop"></div>
 
     {block name='notifications'}

@@ -9,16 +9,14 @@
       {hook h='displayTopHome'}
     </div>
 
-
-    <div id="displayCenterHome">
+    <div id="displayCenterHome" class="container">
       {hook h='displayCenterHome'}
     </div>
 
     
-    <div id="displayBottomHome">
+    <div id="displayBottomHome" class="container">
       {hook h='displayBottomHome'}
     </div>
-
 
     {* In case you want to use the 'displayHome' hook, you should uncomment the next line *}
     {* {$HOOK_HOME nofilter} *}

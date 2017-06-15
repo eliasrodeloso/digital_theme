@@ -3,6 +3,7 @@
   {if $breadcrumb.count == 1}
     class="d-none"
   {/if}
+        class="container"
 >
   <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
     {foreach from=$breadcrumb.links item=path name=breadcrumb}
