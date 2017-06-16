@@ -20,6 +20,7 @@
   </header>
 
   <div class="page-wrapper">
+
     <div id="backdrop" class="dark-backdrop"></div>
 
     {block name='notifications'}
@@ -30,32 +31,36 @@
       {include file='_partials/breadcrumb.tpl'}
     {/block}
 
-    {block name='left_column'}
-      <div id="left-column">
-        {if $page.page_name == 'product'}
-          {hook h='displayLeftColumnProduct'}
-        {else}
-          {hook h="displayLeftColumn"}
-        {/if}
-      </div>
-    {/block}
+    {block name="page_content"}
 
-    {block name='right_column'}
-      <div id="right-column">
-        {if $page.page_name == 'product'}
-          {hook h='displayRightColumnProduct'}
-        {else}
-          {hook h="displayRightColumn"}
-        {/if}
-      </div>
-    {/block}
+      {block name='left_column'}
+        <div id="left-column">
+          {if $page.page_name == 'product'}
+            {hook h='displayLeftColumnProduct'}
+          {else}
+            {hook h="displayLeftColumn"}
+          {/if}
+        </div>
+      {/block}
 
-    {block name='content_wrapper'}
-      <div id="content-wrapper" class="left-column right-column">
-        {block name='content'}
-          <p>Hello world! This is HTML5 Boilerplate.</p>
-        {/block}
-      </div>
+      {block name='right_column'}
+        <div id="right-column">
+          {if $page.page_name == 'product'}
+            {hook h='displayRightColumnProduct'}
+          {else}
+            {hook h="displayRightColumn"}
+          {/if}
+        </div>
+      {/block}
+
+      {block name='content_wrapper'}
+        <div id="content-wrapper" class="left-column right-column">
+          {block name='content'}
+            <p>Hello world! This is HTML5 Boilerplate.</p>
+          {/block}
+        </div>
+      {/block}
+
     {/block}
 
   </div>
