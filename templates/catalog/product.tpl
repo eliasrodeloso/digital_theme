@@ -97,13 +97,13 @@
           {block name='product_cover_tumbnails'}
             {include file='catalog/_partials/product-cover-thumbnails.tpl'}
           {/block}
-          {block name='product_flags'}
+          {*{block name='product_flags'}
             <div class="product-flags">
               {foreach from=$product.flags item=flag}
                 <span class="{$flag.type}">{$flag.label}</span>
               {/foreach}
             </div>
-          {/block}
+          {/block}*}
         </div>
         
 
@@ -147,7 +147,7 @@
                 {include file='catalog/_partials/product-prices.tpl'}
               {/block}
 
-              {if $groups && $groups.count}
+              {if $groups}
                 {block name='product_variants'}
                   {include file='catalog/_partials/product-variants.tpl'}
                 {/block}
