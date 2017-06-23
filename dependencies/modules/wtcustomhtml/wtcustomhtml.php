@@ -52,9 +52,9 @@ class WTCustomHTML extends Module
 			if (!$this->registerHook($hook))
 				return false;
 		include(dirname(__FILE__).'/sql/install.php');
-		$sample_data = new SampleDataHtml();
+		$sample_data;
 		$base_url = _PS_BASE_URL_.__PS_BASE_URI__;
-		$sample_data->initData($base_url);
+		$sample_data;
 		return true;
 	}
 	public function uninstall()
