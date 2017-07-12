@@ -22,7 +22,7 @@
 {/block}
 
 {block name='content'}
-
+  <div class="container">
   <section id="product-page" itemscope itemtype="https://schema.org/Product">
     <meta itemprop="url" content="{$product.url}">
 
@@ -322,5 +322,6 @@
       {hook h='displayFooterProduct' product=$product category=$category}
     {/block}
   </footer>
+  </div>
 
 {/block}

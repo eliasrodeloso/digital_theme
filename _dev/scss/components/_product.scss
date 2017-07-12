@@ -1,9 +1,6 @@
 
 #product-page{
-	background-color: $gray-lightest;
-	padding: $spacer $spacer;
-	border: $border-width solid $gray-light;
-	margin-bottom: $spacer;
+	@extend .dt-page-wrapper;
 
 	.product-subtitle{
 		border-bottom: $border-width solid $brand-primary;

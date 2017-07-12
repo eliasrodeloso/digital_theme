@@ -2,11 +2,11 @@
 
 {block name="page_content"}
 
-  <div class="container">
+  <div class="container dt-page-wrapper">
     <div class="row">
 
       {block name='left_column'}
-        <aside class="col-xs-12 col-md-4">
+        <aside class="col-xs-12 col-md-3">
           {if $page.page_name == 'product'}
             {hook h='displayLeftColumnProduct'}
           {else}
@@ -16,7 +16,7 @@
       {/block}
 
       {block name='content_wrapper'}
-        <section id="main" class="col-xs-12 col-md-8">
+        <section id="main" class="col-xs-12 col-md-9">
 
           {block name='product_list_header'}
             <h2 class="h2">{$listing.label}</h2>
